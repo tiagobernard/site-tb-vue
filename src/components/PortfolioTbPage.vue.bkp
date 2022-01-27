@@ -1,0 +1,20 @@
+<template>
+    <CabecalhoTb/>
+    <PortfolioTb/>
+</template>
+
+<script>
+import CabecalhoTb from './CabecalhoTb.vue';
+import PortfolioTb from './PortfolioTb.vue';
+    export default {
+        name: 'PortfolioTbPage',
+        components: {
+        PortfolioTb,
+        CabecalhoTb,
+        },
+    }
+</script>
+
+<style>
+#home {display:none;}
+</style>
