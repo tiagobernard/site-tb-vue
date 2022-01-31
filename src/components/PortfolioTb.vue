@@ -76,10 +76,7 @@ export default {
       window.scrollTo(0, 0)
 },
     computed: {
-    //loopPortf3() {
-    //return this.loopPortfs.slice()[0];
     loopPortf3(){ return this.loopPortfs.slice(0,3) }
-    //return this.loopPortfs.slice(-3)[0];
   }
 }
 </script>
