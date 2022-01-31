@@ -1,4 +1,4 @@
-# sitetb
+# site tiagobernardes.com.br versão vue.js
 
 ## Project setup
 ```
@@ -20,5 +20,5 @@ npm run build
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### documentação vue.js
+Veja em: [referência para configuração](https://cli.vuejs.org/config/).
