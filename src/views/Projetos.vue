@@ -1,6 +1,5 @@
 <template>
-  <div class="proj container">
-    <h1>principais projetos</h1>
+  <div class="proj">
     <div>
     <PortfolioTb/>
     </div>
@@ -23,4 +22,5 @@ methods:{/*
 <style>
 .proj .portfolioHome {display:none;}
 .portfolioPage .portfDesc a i {color:#606060;}
+.portfolioPage li {background:#f8f8f8;border-bottom:1px solid #e8e8e8;}
 </style>

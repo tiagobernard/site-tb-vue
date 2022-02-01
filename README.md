@@ -21,4 +21,4 @@ npm run lint
 ```
 
 ### documentação vue.js
-Veja em: [referência para configuração](https://cli.vuejs.org/config/).
+Veja a [referência para configuração](https://cli.vuejs.org/config/).
