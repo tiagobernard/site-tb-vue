@@ -4,13 +4,6 @@
 <div class="">
 <div class="">
 <h2>principais habilidades</h2>
-<!--h3>passe o cursor sobre o card</h3-->
-<!--ul>
-<li class="mostrar" v-for="(descHabili, i) in descHabilis" v-bind:key="i">
-<h3>{{descHabili.tituloCard}}</h3>
-<span>{{descHabili.textCard}}</span>
-</li>
-</ul -->
 </div>
 <div class="cards">
 <ul>
