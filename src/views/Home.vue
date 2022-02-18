@@ -2,10 +2,10 @@
   <div class="home">
     <!--img alt="Vue logo" src="../assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/-->
-  
   <!--CabecalhoTb/-->
   <SobreTb/>
   <HabilidadesTb/>
+  <ServicosTb/>
   <PortfolioTb/>
   <ContatoTb/>
   </div>
@@ -16,18 +16,20 @@
 //import HelloWorld from '@/components/HelloWorld.vue'
 //import CabecalhoTb from '@/components/CabecalhoTb.vue';
 import SobreTb from '@/components/SobreTb.vue';
-import HabilidadesTb from '@/components/HabilidadesTb.vue';
+import ServicosTb from '@/components/ServicosTb.vue';
 import PortfolioTb from '@/components/PortfolioTb.vue';
 import ContatoTb from '@/components/ContatoTb.vue'
+import HabilidadesTb from '@/components/HabilidadesTb.vue';
 
 export default {
   name: 'Home',
   components: {
     //CabecalhoTb,
     SobreTb,
-    HabilidadesTb,
+    ServicosTb,
     PortfolioTb,
     ContatoTb,
+    HabilidadesTb,
     //HelloWorld
   },
     mounted() {

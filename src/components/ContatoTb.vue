@@ -39,5 +39,6 @@ export default {
 <style scoped>
 .contato {background:#e8e8e8;}
 input, textarea {font-family:"Space Mono", Helvetica, Arial, Verdana, sans-serif;}
+textarea {height:100px;}
 h3 {margin-bottom:15px;}
 </style>

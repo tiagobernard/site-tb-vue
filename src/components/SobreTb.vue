@@ -1,15 +1,24 @@
 <template>
 <div class="container sobre">
-    <h1>olá! sou tiago bernardes, brasileiro,
+<div class="row d-flex align-items-center">
+<div class="col-8">
+    <!--h2>olá! sou tiago bernardes, brasileiro,
 freelancer, desenvolvedor front-end,
 especialista wordpress,
-residente no brasil</h1>
-<div class="socialTb">
+residente no brasil</h2 -->
+
+<h2>olá! eu sou
+<h1>tiago bernardes,</h1>
+desenvolvedor front-end,<br>
+wordpress e woocommerce.</h2>
+</div>
+<div class="col-4 socialTb">
 <ul>
 <li v-for="(loopSocial,index) in loopSocials" :key="index">
   <a :href="loopSocial.urlS" target="_blank"><span v-html="loopSocial.iconeS"></span></a>
 </li>
 </ul>
+</div>
 </div>
 </div>
 </template>
@@ -36,9 +45,9 @@ export default {
 </script>
 
 <style scoped>
-.sobre {text-align:center;}
-.socialTb {margin-top:30px;}
+.sobre {}
+.socialTb {margin-top:30px;text-align:center}
 .socialTb ul {margin-bottom:0;}
-.socialTb a {color:#606060;font-size:32px;}
+.socialTb a {color:#3f729b;font-size:48px;}
 .socialTb a:hover {opacity:0.8}
 </style>
