@@ -1,8 +1,8 @@
 <template>
     <div id="servicos" class="servicos">
         <div class="container">
-            <h1>será incrível atender a sua empresa, tenho várias soluções para executar seu projeto.</h1>
-            <h2>alguns tópicos que podem ajudar:</h2>
+            <h1>será incrível atender a sua empresa.</h1>
+            <h2>algumas soluções para executar seu projeto:</h2>
             <ul>
                 <li class="d-flex align-items-center" v-for="(loopHab, index) of loopHabs" v-bind:key="index">
                     <span class="habIcon" v-html="loopHab.icone"></span>
@@ -35,16 +35,16 @@ export default {
                 descricao: 'wordpress',
             },*/{
                 icone: '<i class="fas fa-laptop-code"></i>',
-                descricao: 'sites',
+                descricao: 'site',
             },{
                 icone: '<i class="fas fa-shopping-cart"></i>',
-                descricao: 'e-commerce',
+                descricao: 'loja virtual',
             },{
                 icone: '<i class="fas fa-file-alt"></i>',
-                descricao: 'landing pages',
+                descricao: 'landing page',
             },{
                 icone: '<i class="fas fa-globe"></i>',
-                descricao: 'domínios',
+                descricao: 'registro de domínio',
             },{
                 icone: '<i class="fas fa-server"></i>',
                 descricao: 'hospedagem dedicada',
@@ -74,9 +74,13 @@ export default {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+
 .servicos {background-color:#282b30;color:#fff;padding:35px 0}
 .servicos h1, .servicos h2 {font-family:'Montserrat';font-weight:200}
-.servicos ul {column-count:3;}
+.servicos ul {column-count:3;padding-left:0;}
 .servicos ul li {padding-top:35px;}
 .habIcon {width:64px;line-height:64px;text-align:center;border-radius:50%;background:#3f729b;font-size:32px;margin-right:10px;transition:0.3s;}
 .habIcon:hover{transform: rotate(-10deg);}

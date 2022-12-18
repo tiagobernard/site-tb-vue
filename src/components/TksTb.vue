@@ -20,6 +20,8 @@ export default {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+
 .thanks {
     background: #e8e8e8;
     padding: 150px 0;

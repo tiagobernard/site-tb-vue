@@ -3,7 +3,7 @@
   <div class="container">
     <div class="row d-flex align-items-center">
       <div class="col-8">
-        <h1>olá! eu sou<br/>tiago bernardes,<br/>desenvolvedor front-end,<br>wordpress e woocommerce.</h1>
+        <h1>olá! eu sou<br/>tiago bernardes,<br/>front-end dev,<br>wordpress, headless, vuejs.</h1>
       </div>
       <div class="col-4 socialTb">
         <ul>
@@ -41,6 +41,9 @@ export default {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
 .sobre {background-color:#e8e8e8;padding: 35px 0;color:#282b30;}
 .sobre h1 {font-family:'Montserrat';font-weight:200}
 
