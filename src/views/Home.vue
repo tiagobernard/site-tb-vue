@@ -6,6 +6,7 @@
   <ServicosTb/>
   <PortfolioTb/>
   <ContatoTb/>
+  <FooterTb/>
   </div>
 </template>
 
@@ -17,6 +18,7 @@ import ServicosTb from '@/components/ServicosTb.vue';
 import PortfolioTb from '@/components/PortfolioTb.vue';
 import ContatoTb from '@/components/ContatoTb.vue'
 import HabilidadesTb from '@/components/HabilidadesTb.vue';
+import FooterTb from '@/components/FooterTb.vue'
 
 export default {
   name: 'HoMe',
@@ -27,7 +29,7 @@ export default {
     PortfolioTb,
     ContatoTb,
     HabilidadesTb,
-    //HelloWorld
+    FooterTb
   },
     mounted() {
   window.scrollTo(0, 0)
