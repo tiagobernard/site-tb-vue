@@ -34,9 +34,7 @@ export default {
 }
 
 .rodape a {
-    color: #fff
-        /*#3f729b*/
-    ;
+    color: #fff;
     font-weight: 700;
     display: inline-block;
     text-decoration: none;

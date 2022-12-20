@@ -43,7 +43,7 @@ header {
 }
 
 .cabecalho {
-  background-color: #e8e8e8;
+  background-color: #e8e8e8;position:fixed;width:100%;overflow:hidden;
 }
 
 .marcatb a {

@@ -44,7 +44,7 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
-.sobre {background-color:#e8e8e8;padding: 35px 0;color:#282b30;}
+.sobre {background-color:#e8e8e8;padding: 143px 0 35px 0;color:#282b30;}
 .sobre h1 {font-family:'Montserrat';font-weight:200}
 
 .socialTb ul {
@@ -71,6 +71,7 @@ export default {
 }
 
 @media only screen and (max-width:731px) {
+  .sobre {padding: 165px 0 35px 0;}
   .socialTb ul li {
     margin-left:0;
     height: 60px;
