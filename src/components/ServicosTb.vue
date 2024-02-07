@@ -37,21 +37,25 @@ export default {
                 icone: '<i class="fas fa-laptop-code"></i>',
                 descricao: 'site',
             },{
-                icone: '<i class="fas fa-shopping-cart"></i>',
-                descricao: 'loja virtual',
-            },{
                 icone: '<i class="fas fa-file-alt"></i>',
                 descricao: 'landing page',
             },{
-                icone: '<i class="fas fa-globe"></i>',
-                descricao: 'registro de domínio',
+                icone: '<i class="fas fa-store"></i>',
+                descricao: 'marketplace',
+            }
+            ,{
+                icone: '<i class="fas fa-shopping-cart"></i>',
+                descricao: 'loja virtual',
             },{
                 icone: '<i class="fas fa-server"></i>',
                 descricao: 'hospedagem dedicada',
             },{
+                icone: '<i class="fas fa-globe"></i>',
+                descricao: 'registro de domínio',
+            },/*{
                 icone: '<i class="fab fa-expeditedssl"></i>',
                 descricao: 'certificado ssl',
-            }/*,{
+            },{
                 icone: '<i class="fas fa-cloud-upload-alt"></i>',
                 descricao: 'cloud backup',
             },{
