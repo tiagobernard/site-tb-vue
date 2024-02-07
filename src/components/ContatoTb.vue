@@ -3,11 +3,11 @@
         <div class="container">
             <h1>tem um projeto em mente?<br>
             então precisamos conversar.</h1>
-            <h2>você pode me enviar uma mensagem no <a :href="`https://t.me/tiagobernard`" title="@tiagobernard" target="_blank">telegram</a>,<br>
-            um e-mail para <a :href="`mailto:tiago@lab82.dev`">tiago@lab82.dev</a> ou preencher o formulário abaixo.</h2>
+            <h2>você pode me chamar no <a :href="`https://t.me/tiagobernard`" title="@tiagobernard" target="_blank">telegram</a> e <a href="https://wa.me/5531998407238" target="_blank">whatsapp</a><br>
+            ou enviar um e-mail para <a :href="`mailto:tiago@lab82.dev`">tiago@lab82.dev</a></h2>
             <!-- v-on=@ - v-bind=: -->
             <!--form class="row g-3" @submit.prevent="submit" -->
-            <form class="row g-3" action="https://api.staticforms.xyz/submit" method="post">
+            <!--form class="row g-3" action="https://api.staticforms.xyz/submit" method="post">
                 <div class="col-md-6">
                     <input type="text" name="name" class="form-control form-control-lg" placeholder="nome completo *">
                 </div>
@@ -26,7 +26,7 @@
                     <input type="hidden" name="accessKey" value="b7e172de-86cc-44a3-abc9-2f3080d0565f">
                     <input type="hidden" name="redirectTo" value="https://tiagobernardes.com.br/#/tks">
                 </center>
-            </form>
+            </form-->
         </div>
     </div>
 </template>

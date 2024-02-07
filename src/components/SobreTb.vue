@@ -28,13 +28,19 @@ export default {
       }, {
         iconeS: '<i class="fab fa-linkedin-in"></i>',
         urlS: 'https://www.linkedin.com/in/tiagobernard/',
-      }, {
+      }, /*{
         iconeS: '<i class="fab fa-twitter"></i>',
         urlS: 'https://twitter.com/tiagobernard/',
       }, {
         iconeS: '<i class="fab fa-instagram"></i>',
         urlS: 'https://instagram.com/tiagobernard/',
-      },]
+      },*/ {
+        iconeS: '<i class="fab fa-telegram-plane"></i>',
+        urlS: 'https://t.me/tiagobernard',
+      },{
+        iconeS: '<i class="fab fa-whatsapp"></i>',
+        urlS: 'https://wa.me/5531998407238',
+    }]
     }
   }
 }
