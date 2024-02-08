@@ -2,7 +2,10 @@
   <header class="cabecalho">
     <div class="container">
       <div class="row">
-        <div class="marcatb col-4"><router-link to="/">&lt;tb/&gt;</router-link></div>
+        <div class="marcatb col-4">
+          <!--router-link to="/">&lt;tb/&gt;</router-link-->
+          <router-link id="scrollButton" to @click="goUp">&lt;tb/&gt;</router-link>
+        </div>
         <nav class="col-8 d-flex align-items-center">
           <ul>
             <li><router-link to @click="goHab">habilidades</router-link></li>
@@ -24,6 +27,7 @@ export default {
     msg: String
   },
   methods: {
+    goUp() {window.scrollTo(0,0)},
     goHab() { var habi = document.getElementById("habilidades"); habi.scrollIntoView(); },
     goServ() { var serv = document.getElementById("servicos"); serv.scrollIntoView(); },
     goPort() { var port = document.getElementById("portfolio"); port.scrollIntoView(); },
