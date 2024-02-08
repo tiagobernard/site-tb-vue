@@ -3,7 +3,7 @@
   <div class="container">
     <div class="row d-flex align-items-center">
       <div class="col-8">
-        <h1>olá! eu sou<br/>tiago bernardes,<br/>front-end dev,<br>wordpress, headless, vuejs.</h1>
+        <h1>olá! eu sou<br/>tiago bernardes,<br/>desenvolvedor web,<br>wordpress, headless, vuejs.</h1>
       </div>
       <div class="col-4 socialTb">
         <ul>

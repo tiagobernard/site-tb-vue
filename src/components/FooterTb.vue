@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-8">
-                    <small>desenvolvido por tiago bernardes | hospedado por <a href="https://lab82.dev/"
+                    <small>1998 - 2024 | desenvolvido por tiago bernardes | hospedado por <a href="https://lab82.dev/"
                             target="_blank">lab82</a></small>
                 </div>
                 <div class="col-4 assinatura">
