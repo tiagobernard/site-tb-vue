@@ -50,6 +50,8 @@ export default {
     padding: 35px 0;
 }
 
+#portfolio {scroll-margin:108px;}
+
 .portfolio h1 {
     color: #fff;
     margin-bottom: 35px;
@@ -128,6 +130,7 @@ export default {
 
 .btn-top:hover {transform:scale(1.1)}
 @media only screen and (max-width:731px) {
+    #portfolio {scroll-margin: 140px;}
     .portfolio ul {
         column-count: 1;
         padding-left: 0;

@@ -82,7 +82,7 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
 
-.servicos {background-color:#282b30;color:#fff;padding:35px 0}
+.servicos {background-color:#282b30;color:#fff;padding:35px 0;scroll-margin: 108px;}
 .servicos h1, .servicos h2 {font-family:'Montserrat';font-weight:200}
 .servicos ul {column-count:3;padding-left:0;}
 .servicos ul li {padding-top:35px;}
@@ -91,6 +91,7 @@ export default {
 .habDesc{font-size:22px;font-family: "Space Mono", Helvetica, Arial, Verdana, sans-serif;}
 
 @media only screen and (max-width:731px) {
+    .servicos {scroll-margin: 140px;}
     .servicos ul {column-count:1;}
 }
 </style>
