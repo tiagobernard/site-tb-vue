@@ -62,7 +62,7 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
 
 .habilidades {
-    background: #294a65;color: #fff;padding: 35px 0;scroll-margin: 108px;
+    background: #294a65;color: #fff;padding: 35px 0;scroll-margin: 128px;
 }
 
 .habilidades h1 {
@@ -105,7 +105,7 @@ export default {
 }
 
 @media only screen and (max-width:731px) {
-.habilidades {scroll-margin: 140px;}
+.habilidades {scroll-margin: 180px;}
 .cards ul {
     column-count:1;
 }

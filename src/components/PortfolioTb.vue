@@ -97,23 +97,6 @@ export default {
 .portfDesc a i:hover {
     opacity: 0.5
 }
-
-/*.portfolioHome .btn:hover {
-    opacity: 0.8;
-}
-
-.portfolioHome button a {
-    color: #606060;
-    text-decoration: none;
-}
-
-.portfolioHome .btn {
-    margin-top: 20px;
-}
-
-.portfolioHome .btn-light {
-    color: #606060;
-}*/
 .btn-top {
     position: fixed;
     bottom: 35px;
@@ -130,7 +113,7 @@ export default {
 
 .btn-top:hover {transform:scale(1.1)}
 @media only screen and (max-width:731px) {
-    #portfolio {scroll-margin: 140px;}
+    #portfolio {scroll-margin: 180px;}
     .portfolio ul {
         column-count: 1;
         padding-left: 0;

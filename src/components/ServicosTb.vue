@@ -55,7 +55,7 @@ export default {
 .habDesc{font-size:22px;font-family: "Space Mono", Helvetica, Arial, Verdana, sans-serif;}
 
 @media only screen and (max-width:731px) {
-    .servicos {scroll-margin: 140px;}
+    .servicos {scroll-margin: 180px;}
     .servicos ul {column-count:1;}
 }
 </style>
