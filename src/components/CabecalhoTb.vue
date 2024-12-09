@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="marcatb col-4">
-          <router-link id="scrollButton" to="/sobre">&lt;tb/&gt;</router-link>
+          <router-link id="scrollButton" to="/#sobre">&lt;tb/&gt;</router-link>
         </div>
         <nav class="col-8 d-flex align-items-center">
           <ul>
