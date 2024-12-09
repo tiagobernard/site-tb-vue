@@ -70,7 +70,7 @@ nav ul li {
   font-family: "Space Mono", Helvetica, Arial, Verdana, sans-serif;
   font-size: 20px;
   margin-left: 35px;
-  display: block;
+  display: inline-block;
 }
 
 nav ul li a {
@@ -87,6 +87,6 @@ nav ul li a:hover {
 @media only screen and (max-width:731px) {
 .cabecalho {padding:10px 0;}
 .marcatb {display: flex;align-items: center;}
-nav ul li {padding: 5px 0;}
+nav ul li {padding: 5px 0;display: block}
 }
 </style>
