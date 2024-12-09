@@ -5,10 +5,7 @@
       <h1 style="text-align: center;">{{ post.titulo }}</h1>
       <hr>
       <img 
-        :src="post.imagem" 
-        width="500" 
-        height="500" 
-        style="object-fit: cover; float: left; margin-right: 50px; margin-bottom: 50px;" 
+        :src="post.imagem"
       />
       <article v-html="post.artigo"></article>
       <button @click="voltar">Voltar</button>
@@ -76,9 +73,27 @@ export default {
     padding: 168px 30px 60px 30px
 }
 
+#singlePost img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover; float: left; margin-right: 50px; margin-bottom: 50px;
+}
+
 #singlePost pre {
     background-color: #e8e8e8;
     width:fit-content;
     padding: 5px;
+}
+
+@media only screen and (max-width:731px) {
+  #singlePost {
+    padding: 240px 30px 60px 30px;
+  }
+  #singlePost img {
+    width: 100%;
+  }
+  #singlePost pre {
+    max-width: 100%;
+  }
 }
 </style>

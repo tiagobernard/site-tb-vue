@@ -1,5 +1,5 @@
 <template>
-  <div class="sobre">
+  <div id="sobre" class="sobre">
   <div class="container">
     <div class="row d-flex align-items-center">
       <div class="col-6">
@@ -77,7 +77,7 @@ export default {
 }
 
 @media only screen and (max-width:731px) {
-  .sobre {padding: 200px 0 35px 0;}
+  .sobre {padding: 240px 0 35px 0;}
   .sobre .col-6 {min-width: 100%;}
   .socialTb {min-width: 100%;padding-top:20px}
   .socialTb ul {min-width: 100%;display: flex;justify-content: space-between;padding: 0}
