@@ -18,22 +18,7 @@ export default {
     name: 'ServicosTb',
     data() {
         return {
-    loopHabs: [/*{
-                icone: '<i class="fas fa-code"></i>',
-                descricao: 'front-end',
-            },{
-                icone: '<i class="fab fa-angular"></i>',
-                descricao: 'angular',
-            },{
-                icone: '<i class="fab fa-react"></i>',
-                descricao: 'react',
-            },{
-                icone: '<i class="fab fa-vuejs"></i>',
-                descricao: 'vue.js',
-              },{
-                icone: '<i class="fab fa-wordpress"></i>',
-                descricao: 'wordpress',
-            },*/{
+    loopHabs: [{
                 icone: '<i class="fas fa-laptop-code"></i>',
                 descricao: 'site',
             },{
@@ -52,28 +37,7 @@ export default {
             },{
                 icone: '<i class="fas fa-globe"></i>',
                 descricao: 'registro de domínio',
-            },/*{
-                icone: '<i class="fab fa-expeditedssl"></i>',
-                descricao: 'certificado ssl',
-            },{
-                icone: '<i class="fas fa-cloud-upload-alt"></i>',
-                descricao: 'cloud backup',
-            },{
-                icone:'<i class="fas fa-cloud-upload-alt"></i>',
-                descricao: 'teste item',
-            },{
-                icone: '<i class="fas fa-server"></i>',
-                descricao: 'teste item 2',
-            },{
-                icone:'<i class="fas fa-cloud-upload-alt"></i>',
-                descricao: 'teste item',
-            },{
-                icone: '<i class="fas fa-server"></i>',
-                descricao: 'teste item 2',
-            },{
-                icone: '<i class="fas fa-server"></i>',
-                descricao: 'teste item 2',
-            }*/]
+            }]
 }}}
 </script>
 

@@ -12,7 +12,6 @@
             <li><router-link to @click="goServ">serviços</router-link></li>
             <li><router-link to @click="goPort">portfólio</router-link></li>
             <li><router-link to @click="goCont">contato</router-link></li>
-            <!--li><router-link to="/tks">obrigado</router-link></li -->
           </ul>
         </nav>
       </div>
