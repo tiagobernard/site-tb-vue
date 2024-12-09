@@ -104,7 +104,6 @@ export default {
 }
 
 @media only screen and (max-width:731px) {
-.habilidades {scroll-margin: 180px;}
 .cards ul {
     column-count:1;
 }

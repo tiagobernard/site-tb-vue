@@ -70,7 +70,7 @@ nav ul li {
   font-family: "Space Mono", Helvetica, Arial, Verdana, sans-serif;
   font-size: 20px;
   margin-left: 35px;
-  display: inline-block;
+  display: block;
 }
 
 nav ul li a {

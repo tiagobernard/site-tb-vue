@@ -19,11 +19,13 @@ const router = createRouter({
   scrollBehavior(to, from, savedPosition) {
     if (to.hash) {
       return new Promise((resolve) => {
-        // Aguarda a navegação para a nova rota ser concluída
         setTimeout(() => {
           const element = document.querySelector(to.hash);
           if (element) {
-            const headerHeight = 108; // Altura do cabeçalho fixo
+            // Detecta dinamicamente a altura do cabeçalho
+            const header = document.querySelector('header'); // Substitua pelo seletor correto do cabeçalho
+            const headerHeight = header ? header.offsetHeight : 0;
+  
             const elementPosition = element.getBoundingClientRect().top + window.scrollY;
             const offsetPosition = elementPosition - headerHeight;
   
@@ -32,13 +34,13 @@ const router = createRouter({
               behavior: "smooth",
             });
           }
-          resolve(); // Finaliza a Promise
-        }, 750); // Reduza ou ajuste conforme necessário
+          resolve();
+        }, 750); // Ajuste o delay, se necessário
       });
     }
   
-    return savedPosition || { top: 0 }; // Caso padrão: rola para o topo ou posição salva
-  }
+    return savedPosition || { top: 0 };
+  }  
 });
 
 export default router

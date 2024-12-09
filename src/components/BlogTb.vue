@@ -100,15 +100,13 @@ export default {
 }
 
 @media only screen and (max-width:731px) {
-    .blog {
-        scroll-margin: 180px;
+    .postsBlog ul {
+        display: flex;
+        flex-direction: column;
     }
 
-    .blog ul {
-        column-count: 1;
-        padding-left: 0;
+    .postsBlog li {
         width: 100%;
-        display: inline-flex;
     }
 
     .blog li a img {
