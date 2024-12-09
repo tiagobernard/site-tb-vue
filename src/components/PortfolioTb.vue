@@ -15,11 +15,7 @@
     </div>
 </template>
 <script>
-
-
-
 import axios from 'axios'
-//import axios from '@/axios.js'
 export default {
     name: 'PortfolioTb',
     data() {
@@ -50,7 +46,7 @@ export default {
     padding: 35px 0;
 }
 
-#portfolio {scroll-margin:108px;}
+/* #portfolio {scroll-margin:108px;} */
 
 .portfolio h1 {
     color: #fff;

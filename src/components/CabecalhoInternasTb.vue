@@ -3,6 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="marcatb col-4">
+          <!--router-link to="/">&lt;tb/&gt;</router-link-->
           <router-link id="scrollButton" to="/">&lt;tb/&gt;</router-link>
         </div>
         <nav class="col-8 d-flex align-items-center">
@@ -18,13 +19,16 @@
     </div>
   </header>
 </template>
+
 <script>
 export default {
-  name: 'CabecalhoTb',
+  name: 'CabecalhoInternasTb',
   props: {
     msg: String
   },
-  methods: {}
+  methods: {
+    goUp() {window.scrollTo(0,0)},
+  }
 }
 </script>
 

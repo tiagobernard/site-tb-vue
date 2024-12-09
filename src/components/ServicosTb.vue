@@ -4,9 +4,9 @@
             <h1>será incrível atender a sua empresa.</h1>
             <h2>algumas soluções para executar seu projeto:</h2>
             <ul>
-                <li class="d-flex align-items-center" v-for="(loopHab, index) of loopHabs" v-bind:key="index">
-                    <span class="habIcon" v-html="loopHab.icone"></span>
-                    <span class="habDesc">{{loopHab.descricao}}</span>
+                <li class="d-flex align-items-center" v-for="(loopServ, index) of loopServs" v-bind:key="index">
+                    <span class="servIcon" v-html="loopServ.icone"></span>
+                    <span class="servDesc">{{loopServ.descricao}}</span>
                 </li>
             </ul>
         </div>
@@ -18,7 +18,7 @@ export default {
     name: 'ServicosTb',
     data() {
         return {
-    loopHabs: [{
+    loopServs: [{
                 icone: '<i class="fas fa-laptop-code"></i>',
                 descricao: 'site',
             },{
@@ -50,9 +50,9 @@ export default {
 .servicos h1, .servicos h2 {font-family:'Montserrat';font-weight:200}
 .servicos ul {column-count:3;padding-left:0;}
 .servicos ul li {padding-top:35px;}
-.habIcon {width:64px;line-height:64px;text-align:center;border-radius:50%;background:#3f729b;font-size:32px;margin-right:10px;transition:0.3s;}
-.habIcon:hover{transform: rotate(-10deg);}
-.habDesc{font-size:22px;font-family: "Space Mono", Helvetica, Arial, Verdana, sans-serif;}
+.servIcon {width:64px;line-height:64px;text-align:center;border-radius:50%;background:#3f729b;font-size:32px;margin-right:10px;transition:0.3s;}
+.servIcon:hover{transform: rotate(-10deg);}
+.servDesc{font-size:22px;font-family: "Space Mono", Helvetica, Arial, Verdana, sans-serif;}
 
 @media only screen and (max-width:731px) {
     .servicos {scroll-margin: 180px;}

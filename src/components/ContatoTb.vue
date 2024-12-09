@@ -5,28 +5,6 @@
             então precisamos conversar.</h1>
             <h2>você pode me chamar no <a :href="`https://t.me/tiagobernard`" title="@tiagobernard" target="_blank">telegram</a> e <a href="https://wa.me/5531998407238" target="_blank">whatsapp</a><br>
             ou enviar um e-mail para <a :href="`mailto:tiago@lab82.dev`">tiago@lab82.dev</a></h2>
-            <!-- v-on=@ - v-bind=: -->
-            <!--form class="row g-3" @submit.prevent="submit" -->
-            <!--form class="row g-3" action="https://api.staticforms.xyz/submit" method="post">
-                <div class="col-md-6">
-                    <input type="text" name="name" class="form-control form-control-lg" placeholder="nome completo *">
-                </div>
-                <div class="col-md-6">
-                    <input type="email" name="email" class="form-control form-control-lg" placeholder="e-mail *">
-                </div>
-                <div class="col-md-6">
-                    <input type="text" name="phone" inputmode="numeric" class="form-control form-control-lg" placeholder="whatsapp com DDD *">
-                </div>
-                <div class="col-md-6">
-                    <input type="text" name="subject" class="form-control form-control-lg" placeholder="assunto *">
-                </div>
-                <center class="col-12">
-                    <textarea name="message" class="mb-3 form-control form-control-lg" placeholder="mensagem *"></textarea>
-                    <button type="submit" class="btn btn-secondary btn-lg">enviar</button>
-                    <input type="hidden" name="accessKey" value="b7e172de-86cc-44a3-abc9-2f3080d0565f">
-                    <input type="hidden" name="redirectTo" value="https://tiagobernardes.com.br/#/tks">
-                </center>
-            </form-->
         </div>
     </div>
 </template>
@@ -35,15 +13,7 @@
 export default {
     name: 'ContatoTb',
     data() {
-        return {
-            form: {
-                nome: null,
-                email: null,
-                whats: null,
-                assunto: null,
-                mensagem: null
-            }
-        }
+        return {}
     },
     methods: {
         submit() {

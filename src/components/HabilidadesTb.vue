@@ -16,7 +16,6 @@
             </div>
         </div>
     </div>
-
 </template>
 
 <script>
@@ -62,7 +61,7 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
 
 .habilidades {
-    background: #294a65;color: #fff;padding: 35px 0;scroll-margin: 108px;
+    background: #294a65;color: #fff;padding: 35px 0;
 }
 
 .habilidades h1 {

@@ -60,7 +60,6 @@ export default {
 .blog {
     background-color: #608db0;
     padding: 35px 0;
-    scroll-margin: 108px;
 }
 
 .blog h1 {
@@ -98,21 +97,8 @@ export default {
 .postsBlog li img:hover {
     transition: 0.3s;
     transform: scale(0.95);
-    /* box-shadow: 3px 3px 3px rgba(0, 0, 0, .6) */
 }
 
-
-/* .portfDesc {
-    line-height: 35px;
-}
-
-.portfDesc a i {
-    color: #fff;
-}
-
-.portfDesc a i:hover {
-    opacity: 0.5
-} */
 @media only screen and (max-width:731px) {
     .blog {
         scroll-margin: 180px;
