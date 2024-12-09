@@ -32,13 +32,14 @@ export default {
                     let li = document.createElement('li')
                     let imagem = document.createElement('img')
                     let titulo = document.createElement('p')
+                    let link = document.createElement('a')
                    
                     titulo.innerHTML = item.titulo
-
                     imagem.src = item.imagem
-
-                    li.appendChild(imagem)
-                    li.appendChild(titulo)
+                    link.href = `/single?slug=${item.slug}`
+                    li.appendChild(link)
+                    link.appendChild(imagem)
+                    link.appendChild(titulo)
                     ul.appendChild(li)
                    
                 })
@@ -63,7 +64,7 @@ export default {
 }
 
 .blog h1 {
-    color: #333;
+    color:#282b30;
     margin-bottom: 35px;
     font-family: 'Montserrat';
     font-weight: 200
@@ -75,31 +76,33 @@ export default {
     padding:0;
 }
 
-.blog li {
+.postsBlog li {
     width:32%;
     list-style: none;
-    color: #fff;
     font-family: "Space Mono", Helvetica, Arial, Verdana, sans-serif;
-    background-color: rgba(0,0,0,.3);
+    background-color: rgba(255,255,255,.3);
     padding: 35px;
     text-align: center;
 }
+
+.postsBlog a {color:#282b30;text-decoration:none}
+.postsBlog a:hover {color:#282b30;opacity: .8;}
 
 .postsBlog li img {
     width: 300px;
     height: 300px;
     object-fit: cover;
-    margin-bottom: 10px
+    margin-bottom:20px
 }
 
 .postsBlog li img:hover {
     transition: 0.3s;
-    transform: scale(0.9);
-    //box-shadow: 3px 3px 3px rgba(0, 0, 0, .6)
+    transform: scale(0.95);
+    /* box-shadow: 3px 3px 3px rgba(0, 0, 0, .6) */
 }
 
 
-.portfDesc {
+/* .portfDesc {
     line-height: 35px;
 }
 
@@ -109,7 +112,7 @@ export default {
 
 .portfDesc a i:hover {
     opacity: 0.5
-}
+} */
 @media only screen and (max-width:731px) {
     .blog {
         scroll-margin: 180px;
@@ -122,7 +125,7 @@ export default {
         display: inline-flex;
     }
 
-    .blog ul li a img {
+    .blog li a img {
         width: 100%;
         height: auto;
     }

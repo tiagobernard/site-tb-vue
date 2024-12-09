@@ -11,6 +11,7 @@
             <li><router-link to @click="goHab">habilidades</router-link></li>
             <li><router-link to @click="goServ">serviços</router-link></li>
             <li><router-link to @click="goPort">portfólio</router-link></li>
+            <li><router-link to @click="goBlog">blog</router-link></li>
             <li><router-link to @click="goCont">contato</router-link></li>
           </ul>
         </nav>
@@ -31,6 +32,7 @@ export default {
     goServ() { var serv = document.getElementById("servicos"); serv.scrollIntoView(); },
     goPort() { var port = document.getElementById("portfolio"); port.scrollIntoView(); },
     goCont() { var cont = document.getElementById("contato"); cont.scrollIntoView(); },
+    goBlog() { var blog = document.getElementById("blog"); blog.scrollIntoView(); }
   }
 }
 </script>
