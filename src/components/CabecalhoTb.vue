@@ -94,5 +94,7 @@ nav ul li a:hover {
 }
 @media only screen and (max-width:731px) {
 .cabecalho {padding:10px 0;}
+.marcatb {display: flex;align-items: center;}
+nav ul li {padding: 5px 0;}
 }
 </style>

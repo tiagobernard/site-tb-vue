@@ -2,10 +2,10 @@
   <div class="sobre">
   <div class="container">
     <div class="row d-flex align-items-center">
-      <div class="col-8">
+      <div class="col-6">
         <h1>olá! eu sou<br/>tiago bernardes,<br/>desenvolvedor web,<br>wordpress, headless, vuejs.</h1>
       </div>
-      <div class="col-4 socialTb">
+      <div class="col-6 socialTb">
         <ul>
           <li v-for="(loopSocial, index) in loopSocials" :key="index">
             <a :href="loopSocial.urlS" target="_blank"><span v-html="loopSocial.iconeS"></span></a>
@@ -28,18 +28,18 @@ export default {
       }, {
         iconeS: '<i class="fab fa-linkedin-in"></i>',
         urlS: 'https://www.linkedin.com/in/tiagobernard/',
-      }, /*{
-        iconeS: '<i class="fab fa-twitter"></i>',
-        urlS: 'https://twitter.com/tiagobernard/',
       }, {
-        iconeS: '<i class="fab fa-instagram"></i>',
-        urlS: 'https://instagram.com/tiagobernard/',
-      },*/ {
         iconeS: '<i class="fab fa-telegram-plane"></i>',
         urlS: 'https://t.me/tiagobernard',
       },{
         iconeS: '<i class="fab fa-whatsapp"></i>',
         urlS: 'https://wa.me/5531998407238',
+    }, {
+        iconeS: '<i class="fab fa-instagram"></i>',
+        urlS: 'https://instagram.com/tiagobernard/'
+    }, {
+      iconeS: '<i class="far fa-envelope"></i>',
+      urlS: 'mailto:tiago@lab82.dev'
     }]
     }
   }
@@ -77,7 +77,10 @@ export default {
 }
 
 @media only screen and (max-width:731px) {
-  .sobre {padding: 165px 0 35px 0;}
+  .sobre {padding: 200px 0 35px 0;}
+  .sobre .col-6 {min-width: 100%;}
+  .socialTb {min-width: 100%;padding-top:20px}
+  .socialTb ul {min-width: 100%;display: flex;justify-content: space-between;padding: 0}
   .socialTb ul li {
     margin-left:0;
     height: 60px;
