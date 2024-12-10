@@ -3,12 +3,11 @@
         <div class="container">
             <h1>tem um projeto em mente?<br>
             então precisamos conversar.</h1>
-            <h2>você pode me chamar no <a :href="`https://t.me/tiagobernard`" title="@tiagobernard" target="_blank">telegram</a> e <a href="https://wa.me/5531998407238" target="_blank">whatsapp</a><br>
+            <h2>você pode me chamar no <a :href="`https://t.me/tiagobernard`" title="@tiagobernard" target="_blank">telegram</a> ou <a href="https://wa.me/5531998407238" target="_blank">whatsapp</a><br>
             ou enviar um e-mail para <a :href="`mailto:tiago@lab82.dev`">tiago@lab82.dev</a></h2>
         </div>
     </div>
 </template>
-
 <script>
 export default {
     name: 'ContatoTb',

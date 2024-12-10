@@ -1,50 +1,47 @@
 <template>
-        <div id="blog" class="blog">
-            <div class="container">
-                <h1>postagens do blog</h1>
-                <div id="postsBlog" class="postsBlog">
-                </div>
+    <div id="blog" class="blog">
+        <div class="container">
+            <h1>postagens do blog</h1>
+            <div v-if="error" class="error">{{ error }}</div>
+            <div v-else-if="posts.length" id="postsBlog" class="postsBlog">
+                <ul>
+                    <li v-for="post in posts" :key="post.slug">
+                        <a :href="`/single?slug=${post.slug}`">
+                            <img :src="post.imagem" :alt="post.titulo" />
+                            <h4>{{ post.titulo }}</h4>
+                        </a>
+                    </li>
+                </ul>
             </div>
+            <div v-else class="loading">Carregando...</div>
         </div>
+    </div>
 </template>
+
 <script>
 export default {
     name: 'BlogTb',
     data() {
-        return { }
+        return {
+            posts: [], // Armazena os posts do blog
+            error: null // Armazena mensagens de erro
+        }
     },
     mounted() {
-       let posts = document.querySelector('#postsBlog')
-            fetch("https://tiagobernardes.com.br/api/blog/posts.json")
-            .then(response => {
+        fetch("https://tiagobernardes.com.br/api/blog/posts.json")
+            .then((response) => {
                 if (!response.ok) {
-                    throw new Error(`Erro ${response.status} : ${response.statusText}`)
+                    throw new Error(`Erro ${response.status}: ${response.statusText}`);
                 }
                 return response.json();
             })
-            .then(data => {
-                let sliceData = data.slice(0,3)
-                let ul = document.createElement('ul')
-                sliceData.forEach((item) => {
-                    let li = document.createElement('li')
-                    let imagem = document.createElement('img')
-                    let titulo = document.createElement('p')
-                    let link = document.createElement('a')
-                   
-                    titulo.innerHTML = item.titulo
-                    imagem.src = item.imagem
-                    link.href = `/single?slug=${item.slug}`
-                    li.appendChild(link)
-                    link.appendChild(imagem)
-                    link.appendChild(titulo)
-                    ul.appendChild(li)
-                   
-                })
-                posts.appendChild(ul)
+            .then((data) => {
+                this.posts = data.slice(0, 3); // Atualiza a propriedade reativa
             })
-            .catch(error => {
-                console.error("Ocorreu o erro: ", error.message)
-            })
+            .catch((error) => {
+                this.error = "Ocorreu um erro ao carregar os posts do blog.";
+                console.error("Erro:", error.message);
+            });
     }
 }
 </script>
@@ -60,35 +57,45 @@ export default {
 }
 
 .blog h1 {
-    color:#282b30;
+    color: #282b30;
     margin-bottom: 35px;
     font-family: 'Montserrat';
     font-weight: 200
 }
 
 .postsBlog ul {
-    display:flex!important;
+    display: flex !important;
     justify-content: space-between;
-    padding:0;
+    padding: 0;
 }
 
 .postsBlog li {
-    width:32%;
+    width: 32%;
     list-style: none;
     font-family: "Space Mono", Helvetica, Arial, Verdana, sans-serif;
-    background-color: rgba(255,255,255,.3);
+    background-color: rgba(255, 255, 255, .3);
     padding: 35px;
     text-align: center;
 }
 
-.postsBlog a {color:#282b30;text-decoration:none}
-.postsBlog a:hover {color:#282b30;opacity: .8;}
+.postsBlog a {
+    text-decoration: none;
+}
+
+.postsBlog a h4 {
+    color: #282b30
+}
+
+.postsBlog a h4:hover {
+    color: #282b30;
+    opacity: .8;
+}
 
 .postsBlog li img {
     width: 300px;
     height: 300px;
     object-fit: cover;
-    margin-bottom:20px
+    margin-bottom: 20px
 }
 
 .postsBlog li img:hover {
