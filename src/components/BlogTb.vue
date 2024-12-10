@@ -8,15 +8,12 @@
         </div>
 </template>
 <script>
-
-//import axios from 'axios'
 export default {
     name: 'BlogTb',
     data() {
         return { }
     },
     mounted() {
-       //axios
        let posts = document.querySelector('#postsBlog')
             fetch("https://tiagobernardes.com.br/api/blog/posts.json")
             .then(response => {
@@ -26,9 +23,9 @@ export default {
                 return response.json();
             })
             .then(data => {
-                
+                let sliceData = data.slice(0,3)
                 let ul = document.createElement('ul')
-                data.forEach((item) => {
+                sliceData.forEach((item) => {
                     let li = document.createElement('li')
                     let imagem = document.createElement('img')
                     let titulo = document.createElement('p')
@@ -107,11 +104,6 @@ export default {
 
     .postsBlog li {
         width: 100%;
-    }
-
-    .blog li a img {
-        width: 100%;
-        height: auto;
     }
 }
 </style>
