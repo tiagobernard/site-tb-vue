@@ -35,7 +35,7 @@ const router = createRouter({
             });
           }
           resolve();
-        }, 800); // Ajuste o delay, se necessário
+        }, 8); // Ajuste o delay, se necessário
       });
     }
   

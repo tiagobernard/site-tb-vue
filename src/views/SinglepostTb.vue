@@ -60,6 +60,9 @@ export default {
 }
 </script>
 <style>
+.mainPosts nav ul {display:none;}
+.mainPosts .cabecalho .col-4 {width:100%;display: flex;justify-content: center;}
+
 .mainPosts {
   background-color: #608db0
 }
