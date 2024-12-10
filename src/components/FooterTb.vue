@@ -3,8 +3,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-8">
-                    <small>1998 - 2024 | desenvolvido por tiago bernardes | hospedado por <a href="https://lab82.dev/"
-                            target="_blank">lab82</a></small>
+                    <small>
+                        1998 - 2024 | desenvolvido em 
+                        <a :href="iconeFooter.linkIcone" target="_blank">
+                        <span v-html="iconeFooter.desenhoIcone"></span>
+                    </a> por tiago bernardes | hospedado por 
+                    <a href="https://lab82.dev/" target="_blank">lab82</a>
+                </small>
                 </div>
                 <div class="col-4 assinatura">
                     <img alt="GitHub last commit"
@@ -18,7 +23,12 @@
 <script>
 export default {
     name: 'ContatoTb',
-    data() { },
+    data() {return{
+        iconeFooter: {
+            desenhoIcone: '<i class="fab fa-vuejs"></i>',
+            linkIcone: 'https://vuejs.org'
+        }
+    }},
     methods: {}
 }
 </script>
@@ -37,11 +47,12 @@ export default {
     color: #fff;
     font-weight: 700;
     display: inline-block;
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 
 .rodape a:hover {
-    transform: scale(1.1) rotate(-5deg)
+    transition: 1s;
+    transform: scale(1.2) rotate(-5deg)
 }
 
 .assinatura {
