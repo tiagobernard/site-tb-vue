@@ -1,12 +1,12 @@
-# Permite o acesso completo aos bots de busca para o conteúdo principal
+# Permite o rastreamento de todas as páginas públicas do site
 User-agent: *
-Disallow: /admin/               # Bloqueia diretórios administrativos (se existirem)
-Disallow: /private/             # Bloqueia conteúdos privados
-Disallow: /static/              # Evita indexação de arquivos estáticos, se desnecessários
-Disallow: /?*                   # Evita indexação de URLs com parâmetros dinâmicos
-
-# Permite rastreamento de rotas geradas pelo Vue.js
 Allow: /
 
-# Especifica a localização do sitemap
-# Sitemap: https://tiagobernardes.com.br/sitemap.xml
+# Bloqueia arquivos e diretórios que não devem ser indexados
+Disallow: /js/                   # Scripts JavaScript
+Disallow: /css/                  # Arquivos CSS
+Disallow: /assets/               # Recursos estáticos
+Disallow: /?*                    # URLs com parâmetros dinâmicos
+
+# Localização do Sitemap
+Sitemap: https://tiagobernardes.com.br/sitemap.xml

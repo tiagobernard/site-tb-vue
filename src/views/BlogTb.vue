@@ -14,9 +14,11 @@
     <FooterTb />
   </div>
 </template>
+
 <script>
 import CabecalhoTb from '@/components/CabecalhoTb.vue';
 import FooterTb from '@/components/FooterTb.vue';
+
 export default {
   name: 'SinglepostTb',
   components: {
@@ -29,12 +31,15 @@ export default {
     };
   },
   methods: {
-    voltar() { window.location.href = "/" },
-    goUp() { window.scrollTo(0, 0); }
+    voltar() {
+      this.$router.push('/'); // Volta para a página inicial usando Vue Router
+    },
+    goUp() {
+      window.scrollTo(0, 0); // Função para rolar para o topo
+    }
   },
   mounted() {
-    const params = new URLSearchParams(window.location.search);
-    const slug = params.get("slug");
+    const slug = this.$route.params.slug; // Pega o parâmetro slug diretamente da URL
     if (!slug) {
       console.error("Slug não encontrado na URL.");
       return;
@@ -59,6 +64,7 @@ export default {
   }
 }
 </script>
+
 <style>
 .mainPosts nav ul {
   display: none;
@@ -99,9 +105,7 @@ export default {
   position: fixed;
   bottom: 35px;
   right: 35px;
-  background-color: #000
-    /*#282b30*/
-  ;
+  background-color: #000;
   z-index: 1;
   padding: 10px 20px;
   font-size: 18px;

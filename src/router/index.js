@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import SinglepostTb from '../views/SinglepostTb.vue'
+import BlogTb from '../views/BlogTb.vue'
 
 const routes = [
   {
@@ -8,9 +8,9 @@ const routes = [
     name: 'home',
     component: HomeView
   }, {
-    path: '/single',
-    name: 'singlepost',
-    component: SinglepostTb
+    path: '/blog/:slug',
+    name: 'blog',
+    component: BlogTb
   }
 ]
 const router = createRouter({

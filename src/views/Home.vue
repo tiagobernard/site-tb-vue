@@ -5,7 +5,7 @@
   <HabilidadesTb/>
   <ServicosTb/>
   <PortfolioTb/>
-  <BlogTb/>
+  <BlogCompTb/>
   <ContatoTb/>
   <FooterTb/>
   </div>
@@ -20,7 +20,7 @@ import PortfolioTb from '@/components/PortfolioTb.vue';
 import ContatoTb from '@/components/ContatoTb.vue'
 import HabilidadesTb from '@/components/HabilidadesTb.vue';
 import FooterTb from '@/components/FooterTb.vue';
-import BlogTb from '@/components/BlogTb.vue';
+import BlogCompTb from '@/components/BlogCompTb.vue';
 
 export default {
   name: 'HoMe',
@@ -29,7 +29,7 @@ export default {
     SobreTb,
     ServicosTb,
     PortfolioTb,
-    BlogTb,
+    BlogCompTb,
     ContatoTb,
     HabilidadesTb,
     FooterTb

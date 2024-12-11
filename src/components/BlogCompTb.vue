@@ -6,7 +6,8 @@
             <div v-else-if="posts.length" id="postsBlog" class="postsBlog">
                 <ul>
                     <li v-for="post in posts" :key="post.slug">
-                        <a :href="`/single?slug=${post.slug}`">
+                        <a :href="`/blog/${post.slug}`">
+                        <!-- <a :href="`/single?slug=${post.slug}`"> -->
                             <img :src="post.imagem" :alt="post.titulo" />
                             <h4>{{ post.titulo }}</h4>
                         </a>
