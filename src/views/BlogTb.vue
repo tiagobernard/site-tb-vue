@@ -20,7 +20,7 @@ import CabecalhoTb from '@/components/CabecalhoTb.vue';
 import FooterTb from '@/components/FooterTb.vue';
 
 export default {
-  name: 'SinglepostTb',
+  name: 'BlogtTb',
   components: {
     CabecalhoTb,
     FooterTb
