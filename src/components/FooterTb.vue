@@ -4,12 +4,12 @@
             <div class="row">
                 <div class="col-8">
                     <small>
-                        1998 - 2024 | desenvolvido em 
+                        1998 - 2024 | desenvolvido em
                         <a :href="iconeFooter.linkIcone" target="_blank">
-                        <span v-html="iconeFooter.desenhoIcone"></span>
-                    </a> por tiago bernardes | hospedado por 
-                    <a href="https://lab82.dev/" target="_blank">lab82</a>
-                </small>
+                            <span v-html="iconeFooter.desenhoIcone"></span>
+                        </a> por tiago bernardes | hospedado por
+                        <a href="https://lab82.dev/" target="_blank">lab82</a>
+                    </small>
                 </div>
                 <div class="col-4 assinatura">
                     <img alt="GitHub last commit"
@@ -23,12 +23,14 @@
 <script>
 export default {
     name: 'ContatoTb',
-    data() {return{
-        iconeFooter: {
-            desenhoIcone: '<i class="fab fa-vuejs"></i>',
-            linkIcone: 'https://vuejs.org'
+    data() {
+        return {
+            iconeFooter: {
+                desenhoIcone: '<i class="fab fa-vuejs"></i>',
+                linkIcone: 'https://vuejs.org'
+            }
         }
-    }},
+    },
     methods: {}
 }
 </script>
@@ -61,10 +63,15 @@ export default {
 }
 
 @media only screen and (max-width:731px) {
+
     .rodape,
     .assinatura {
-        text-align: center!important;
+        text-align: center !important;
     }
-    .col-8, .col-4 {width:100%!important;}
+
+    .col-8,
+    .col-4 {
+        width: 100% !important;
+    }
 }
 </style>
