@@ -1,7 +1,7 @@
 <template>
     <div id="habilidades" class="habilidades">
         <div class="container">
-            <h1>principais habilidades</h1>
+            <h2>principais habilidades</h2>
             <div class="cards">
                 <ul>
                     <li class="d-flex align-items-center" v-for="(descHabili, i) in descHabilis" v-bind:key="i">
@@ -64,7 +64,7 @@ export default {
     background: #294a65;color: #fff;padding: 35px 0;
 }
 
-.habilidades h1 {
+.habilidades h2 {
     color: #f8f8f8;
     margin-bottom:35px;
     font-family:'Montserrat';font-weight:200

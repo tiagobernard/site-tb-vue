@@ -2,7 +2,7 @@
     <div id="portfolio" class="port">
         <div class="portfolio">
             <div class="container">
-                <h1>últimos projetos desenvolvidos</h1>
+                <h2>últimos projetos desenvolvidos</h2>
                 <ul v-for="postagem in postagens.slice(0, 8)" :key="postagem.id">
                     <li>
                         <a :href=postagem.link><img id="imagem" :src=postagem.featured_image.size_full /></a><br />
@@ -46,7 +46,7 @@ export default {
     padding: 35px 0;
 }
 
-.portfolio h1 {
+.portfolio h2 {
     color: #fff;
     margin-bottom: 35px;
     font-family: 'Montserrat';

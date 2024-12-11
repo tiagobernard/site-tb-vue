@@ -1,8 +1,8 @@
 <template>
     <div id="servicos" class="servicos">
         <div class="container">
-            <h1>será incrível atender a sua empresa.</h1>
-            <h2>algumas soluções para executar seu projeto:</h2>
+            <h2>será incrível atender a sua empresa.</h2>
+            <h3>algumas soluções para executar seu projeto:</h3>
             <ul>
                 <li class="d-flex align-items-center" v-for="(loopServ, index) of loopServs" v-bind:key="index">
                     <span class="servIcon" v-html="loopServ.icone"></span>
@@ -47,7 +47,7 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
 
 .servicos {background-color:#282b30;color:#fff;padding:35px 0;scroll-margin: 108px;}
-.servicos h1, .servicos h2 {font-family:'Montserrat';font-weight:200}
+.servicos h2, .servicos h3 {font-family:'Montserrat';font-weight:200}
 .servicos ul {column-count:3;padding-left:0;}
 .servicos ul li {padding-top:35px;}
 .servIcon {width:64px;line-height:64px;text-align:center;border-radius:50%;background:#3f729b;font-size:32px;margin-right:10px;transition:0.3s;}

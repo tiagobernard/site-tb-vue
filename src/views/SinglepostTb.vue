@@ -4,7 +4,7 @@
     <div id="singlePost" class="container" v-if="post">
       <h1 style="text-align: center;">{{ post.titulo }}</h1>
       <hr>
-      <img :src="post.imagem" />
+      <img :src="post.imagem" :alt="post.artigo"/>
       <article v-html="post.artigo"></article>
       <button class="btn btn-secondary" @click="voltar">voltar</button>
       <router-link id="scrollButton" class="btn-top" to @click="goUp">
@@ -30,7 +30,7 @@ export default {
   },
   methods: {
     voltar() { window.location.href = "/" },
-    goUp() { window.scrollTo(0, 0);}
+    goUp() { window.scrollTo(0, 0); }
   },
   mounted() {
     const params = new URLSearchParams(window.location.search);
@@ -60,8 +60,15 @@ export default {
 }
 </script>
 <style>
-.mainPosts nav ul {display:none;}
-.mainPosts .cabecalho .col-4 {width:100%;display: flex;justify-content: center;}
+.mainPosts nav ul {
+  display: none;
+}
+
+.mainPosts .cabecalho .col-4 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 
 .mainPosts {
   background-color: #608db0

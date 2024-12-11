@@ -1,10 +1,10 @@
 <template>
     <div id="contato" class="contato">
         <div class="container">
-            <h1>tem um projeto em mente?<br>
-            então precisamos conversar.</h1>
-            <h2>você pode me chamar no <a :href="`https://t.me/tiagobernard`" title="@tiagobernard" target="_blank">telegram</a> ou <a href="https://wa.me/5531998407238" target="_blank">whatsapp</a><br>
-            ou enviar um e-mail para <a :href="`mailto:tiago@lab82.dev`">tiago@lab82.dev</a></h2>
+            <h2>tem um projeto em mente?<br/>
+            então precisamos conversar.</h2>
+            <h3>você pode me chamar no <a :href="`https://t.me/tiagobernard`" title="@tiagobernard" target="_blank">telegram</a> ou <a href="https://wa.me/5531998407238" target="_blank">whatsapp</a><br>
+            ou enviar um e-mail para <a :href="`mailto:tiago@lab82.dev`">tiago@lab82.dev</a></h3>
         </div>
     </div>
 </template>
@@ -28,8 +28,8 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
 
 .contato {background:#e8e8e8;padding:35px 0;}
-.contato h1,.contato h2 {font-family:'Montserrat';font-weight:200}
-.contato h2 {margin-bottom:35px;}
+.contato h2,.contato h3 {font-family:'Montserrat';font-weight:200}
+.contato h3 {margin-bottom:35px;}
 .contato a {color:#3f729b;text-decoration:none;font-weight:300}
 input, textarea {font-family:"Space Mono", Helvetica, Arial, Verdana, sans-serif;transition:.3s;outline:none}
 input:focus, textarea:focus {padding:10px;}

@@ -1,7 +1,7 @@
 <template>
     <div id="blog" class="blog">
         <div class="container">
-            <h1>postagens do blog</h1>
+            <h2>postagens do blog</h2>
             <div v-if="error" class="error">{{ error }}</div>
             <div v-else-if="posts.length" id="postsBlog" class="postsBlog">
                 <ul>
@@ -56,7 +56,7 @@ export default {
     padding: 35px 0;
 }
 
-.blog h1 {
+.blog h2 {
     color: #282b30;
     margin-bottom: 35px;
     font-family: 'Montserrat';
