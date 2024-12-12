@@ -76,6 +76,28 @@ export default {
   color:#282b30;
 }
 
+.socialTb li {
+  animation: balanco 800ms;
+  animation-iteration-count: 1;
+  animation-delay: 800ms;
+}
+
+@keyframes balanco {
+  0% {
+    transform: rotate(-50deg);
+  } 30%{
+    transform: rotate(30deg);
+  } 50% {
+    transform: rotate(-30deg)
+  } 70% {
+    transform: rotate(20deg)
+  } 90%{
+    transform: rotate(-5deg);
+  } 100% {
+    transform: rotate(0deg); 
+  }
+}
+
 @media only screen and (max-width:731px) {
   .sobre {padding: 240px 0 35px 0;}
   .sobre .col-6 {min-width: 100%;}
