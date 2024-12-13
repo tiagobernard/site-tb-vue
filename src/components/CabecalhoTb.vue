@@ -21,10 +21,9 @@
 <script>
 export default {
   name: 'CabecalhoTb',
-  props: {
-    msg: String
-  },
-  methods: {}
+  props: { msg: String },
+  methods: {},
+  mounted() {document.title = `tiago bernardes | desenvolvedor web`;}
 }
 </script>
 
