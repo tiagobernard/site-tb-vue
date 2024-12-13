@@ -1,5 +1,10 @@
 # site tiagobernardes.com.br feito em vuejs 3
 
+## Clone the project
+```
+git clone https://github.com/tiagobernard/site-tb-vue
+```
+
 ## Project setup
 ```
 npm install
