@@ -3,8 +3,23 @@
   <!-- Página inicial -->
   <url>
     <loc>https://tiagobernardes.com.br/</loc>
-    <lastmod>2024-12-11</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2024-12-13</lastmod>
     <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Projeto: Tabuada -->
+  <url>
+    <loc>https://tiagobernardes.com.br/tabuada</loc>
+    <lastmod>2024-12-13</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <!-- Projeto: IMC -->
+  <url>
+    <loc>https://tiagobernardes.com.br/imc</loc>
+    <lastmod>2024-12-13</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
   </url>
 </urlset>

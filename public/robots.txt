@@ -1,12 +1,16 @@
-# Permite o rastreamento de todas as páginas públicas do site
 User-agent: *
+Disallow: /admin/
+Disallow: /api/
+Disallow: /config/
+Disallow: /node_modules/
+Disallow: /static/
+Disallow: /temp/
+Disallow: /private/
+
 Allow: /
+Allow: /tabuada
+Allow: /tabuada/*
+Allow: /imc
+Allow: /imc/*
 
-# Bloqueia arquivos e diretórios que não devem ser indexados
-Disallow: /js/                   # Scripts JavaScript
-Disallow: /css/                  # Arquivos CSS
-Disallow: /assets/               # Recursos estáticos
-Disallow: /?*                    # URLs com parâmetros dinâmicos
-
-# Localização do Sitemap
 Sitemap: https://tiagobernardes.com.br/sitemap.xml
