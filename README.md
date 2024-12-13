@@ -2,7 +2,7 @@
 
 ## Clone the project
 ```
-git clone https://github.com/tiagobernard/site-tb-vue
+$ git clone https://github.com/tiagobernard/site-tb-vue
 ```
 
 ## Project setup
