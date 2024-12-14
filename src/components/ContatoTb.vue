@@ -31,7 +31,7 @@ export default {
 .contato h2,.contato h3 {font-family:'Montserrat';font-weight:400}
 .contato h3 {margin-bottom:35px;}
 .contato a {color:#3f729b;text-decoration:none;font-weight:600;display: inline-block;}
-.contato a:hover {transition: 1s;transform: scale(0.9)}
+.contato a:hover {transition: .3s;transform: scale(0.9)}
 input, textarea {font-family:"Space Mono", Helvetica, Arial, Verdana, sans-serif;transition:.3s;outline:none}
 input:focus, textarea:focus {padding:10px;}
 textarea {height:100px;}
