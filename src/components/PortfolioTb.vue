@@ -76,7 +76,7 @@ export default {
 
 .portfolio ul li a img:hover {
     transform: rotate(-2deg) scale(1.05);
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, .6)
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, .6)
 }
 
 
