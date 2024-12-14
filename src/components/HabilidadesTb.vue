@@ -4,12 +4,13 @@
             <h2>principais habilidades</h2>
             <div class="cards">
                 <ul>
-                    <li class="d-flex align-items-center" v-for="(descHabili, i) in descHabilis" v-bind:key="i">
+                    <li class="d-flex align-items-center" v-for="(card, index) in descHabilis" :key="index"
+                        @mouseover="atualizarCardAtivo(index)" @mouseout="resetarClasseLogo">
                         <div class="cardsi col-2">
-                            <span v-html="descHabili.iconCard"></span>
+                            <span :id="'colorLogo-' + index" v-html="card.iconCard"></span>
                         </div>
                         <div class="cardsp col-10">
-                            <b>{{ descHabili.tituloCard }}</b> | {{ descHabili.textCard }}
+                            <b>{{ card.tituloCard }}</b> | {{ card.textCard }}
                         </div>
                     </li>
                 </ul>
@@ -23,6 +24,7 @@ export default {
     name: 'HabilidadesTb',
     data() {
         return {
+            cardAtivo: null,
             descHabilis: [
                 {
                     tituloCard: 'html5',
@@ -51,8 +53,43 @@ export default {
                 }
             ]
         }
-    }
-}
+    },
+    methods: {
+        atualizarCardAtivo(index) {
+            // Atualiza o card ativo
+            this.cardAtivo = index;
+
+            // Seleciona o elemento correspondente
+            const idLogo = document.querySelector(`#colorLogo-${index}`);
+            if (idLogo) {
+                const tituloCard = this.descHabilis[index]?.tituloCard;
+                this.aplicarClasseLogo(idLogo, tituloCard);
+            }
+        },
+        aplicarClasseLogo(idLogo, tituloCard) {
+            // Aplica a classe CSS com base no título do card
+            if (tituloCard === "html5") {
+                idLogo.classList.add("colorHtml5");
+            } else if (tituloCard === "css3") {
+                idLogo.classList.add("colorCss3");
+            } else if (tituloCard === "javascript") {
+                idLogo.classList.add('colorJs')
+            } else if (tituloCard === "vuejs") {
+                idLogo.classList.add('colorVuejs')
+            } else if (tituloCard === "bootstrap") {
+                idLogo.classList.add('colorBootstrap')
+            } else if (tituloCard === "wordpress") {
+                idLogo.classList.add('colorWordpress')
+            }
+        },
+        resetarClasseLogo() {
+            // Remove todas as classes personalizadas
+            document
+                .querySelectorAll("[id^='colorLogo']")
+                .forEach((el) => el.className = "");
+        },
+    },
+};
 </script>
 
 <style scoped>
@@ -60,21 +97,64 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
 
+.cardsi span {
+    display: inline-block;
+}
+
+.colorHtml5,
+.colorCss3,
+.colorJs,
+.colorVuejs,
+.colorBootstrap,
+.colorWordpress {
+    transform: rotate(-10deg);
+    transition: .3s ease;
+    scale: 1.1;
+    text-shadow: 1px 1px 5px rgba(0,0,0,.6);
+}
+
+.colorHtml5 {
+    color: #f06529;
+}
+
+.colorCss3 {
+    color: #2965f1
+}
+
+.colorJs {
+    color: #f0db4f
+}
+
+.colorVuejs {
+    color: #2da968
+}
+
+.colorBootstrap {
+    color: #563d7c
+}
+
+.colorWordpress {
+    color: #3858e9
+}
+
 .habilidades {
-    background: #294a65;color: #fff;padding: 35px 0;
+    background: #294a65;
+    color: #fff;
+    padding: 35px 0;
 }
 
 .habilidades h2 {
     color: #f8f8f8;
-    margin-bottom:35px;
-    font-family:'Montserrat';font-weight:400
+    margin-bottom: 35px;
+    font-family: 'Montserrat';
+    font-weight: 400
 }
 
 .cards ul {
     column-count: 2;
     column-gap: 10px;
-    padding-left:0;
-    
+    padding-left: 0;
+
 }
 
 .cards li {
@@ -94,24 +174,28 @@ export default {
     font-size: 64px;
     text-align: center;
     margin-right: 5px;
-    transition:.3s;
+    transition: .3s;
 }
 
-.cardsi:hover{transform: rotate(-10deg);}
+/* .cardsi:hover {
+    transform: rotate(-10deg);
+} */
 
 .cardsp {
     font-family: "Space Mono", Helvetica, Arial, Verdana, sans-serif;
 }
 
 @media only screen and (max-width:731px) {
-.cards ul {
-    column-count:1;
+    .cards ul {
+        column-count: 1;
+    }
+
+    .cardsi {
+        margin-right: 20px;
+    }
+
+    .cards li {
+        padding: 5px 20px;
+    }
 }
-.cardsi{
-    margin-right:20px;
-}
-.cards li {
-    padding:5px 20px;
-}
-}
-</style> 
+</style>
