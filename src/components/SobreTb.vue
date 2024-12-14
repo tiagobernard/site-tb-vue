@@ -79,7 +79,7 @@ export default {
 .socialTb li {
   animation: balanco 800ms;
   animation-iteration-count: 1;
-  animation-delay: 800ms;
+  animation-delay: 1s;
 }
 
 @keyframes balanco {
