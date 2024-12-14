@@ -49,12 +49,12 @@ export default {
     color: #fff;
     font-weight: 700;
     display: inline-block;
-    /* text-decoration: none; */
 }
 
 .rodape a:hover {
     transition: 1s;
-    transform: scale(1.2) rotate(-5deg)
+    transform: scale(1.2) rotate(-5deg);
+    text-shadow: 1px 1px 2px rgba(0,0,0,.9);
 }
 
 .assinatura {
