@@ -47,7 +47,7 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
 
 .servicos {background-color:#282b30;color:#fff;padding:35px 0;scroll-margin: 108px;}
-.servicos h2, .servicos h3 {font-family:'Montserrat';font-weight:200}
+.servicos h2, .servicos h3 {font-family:'Montserrat';font-weight:400}
 .servicos ul {column-count:3;padding-left:0;}
 .servicos ul li {padding-top:35px;}
 .servIcon {width:64px;line-height:64px;text-align:center;border-radius:50%;background:#3f729b;font-size:32px;margin-right:10px;transition:0.3s;}

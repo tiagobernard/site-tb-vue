@@ -67,7 +67,7 @@ export default {
 .habilidades h2 {
     color: #f8f8f8;
     margin-bottom:35px;
-    font-family:'Montserrat';font-weight:200
+    font-family:'Montserrat';font-weight:400
 }
 
 .cards ul {

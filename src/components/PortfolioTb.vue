@@ -50,7 +50,7 @@ export default {
     color: #fff;
     margin-bottom: 35px;
     font-family: 'Montserrat';
-    font-weight: 200
+    font-weight: 400
 }
 
 .portfolio ul {

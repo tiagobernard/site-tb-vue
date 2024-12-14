@@ -51,7 +51,7 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
 .sobre {background-color:#e8e8e8;padding: 143px 0 35px 0;color:#282b30;}
-.sobre h1 {font-family:'Montserrat';font-weight:200}
+.sobre h1 {font-family:'Montserrat';font-weight:400}
 
 .socialTb ul {
   text-align:right;

@@ -86,6 +86,9 @@ export default {
   padding: 168px 30px 60px 30px
 }
 
+#singlePost h1, #singlePost h2, #singlePost h3 {font-family: "Montserrat"}
+#singlePost h1 {text-transform: lowercase;}
+
 #singlePost img {
   width: 500px;
   height: 500px;
@@ -99,6 +102,8 @@ export default {
   background-color: #e8e8e8;
   width: fit-content;
   padding: 5px;
+  font-family:'Courier New', Courier, monospace;
+  font-size: medium;
 }
 
 .btn-top {
