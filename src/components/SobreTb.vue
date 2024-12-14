@@ -72,8 +72,9 @@ export default {
 }
 
 .socialTb a:hover {
-  transform: rotate(-5deg) scale(1.1);
-  color:#282b30;
+  transform: rotate(-10deg) scale(1.1);
+  /* color:#282b30; */
+  text-shadow: 2px 2px 1px rgba(0,0,0,.6);
 }
 
 .socialTb li {
