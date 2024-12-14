@@ -110,7 +110,7 @@ export default {
     transform: rotate(-10deg);
     transition: .3s ease;
     scale: 1.1;
-    text-shadow: 1px 1px 5px rgba(0,0,0,.6);
+    text-shadow: 2px 2px 1px rgba(0,0,0,.6);
 }
 
 .colorHtml5 {
