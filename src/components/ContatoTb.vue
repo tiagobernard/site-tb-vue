@@ -29,7 +29,6 @@ export default {
 
 .contato {background:#e8e8e8;padding:35px 0;}
 .contato h2,.contato h3 {font-family:'Montserrat';font-weight:400}
-.contato h3 {margin-bottom:35px;}
 .contato a {color:#3f729b;text-decoration:none;font-weight:600;display: inline-block;}
 .contato a:hover {transition: .3s;transform: scale(0.9)}
 input, textarea {font-family:"Space Mono", Helvetica, Arial, Verdana, sans-serif;transition:.3s;outline:none}
