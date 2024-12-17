@@ -5,8 +5,8 @@
             <h3>algumas soluções para executar seu projeto:</h3>
             <ul>
                 <li class="d-flex align-items-center" v-for="(loopServ, index) of loopServs" v-bind:key="index">
-                    <span class="servIcon" v-html="loopServ.icone"></span>
-                    <span class="servDesc">{{loopServ.descricao}}</span>
+                    <span class="servIcon iconId" v-html="loopServ.icone"></span>
+                    <span class="servDesc">{{ loopServ.descricao }}</span>
                 </li>
             </ul>
         </div>
@@ -18,43 +18,111 @@ export default {
     name: 'ServicosTb',
     data() {
         return {
-    loopServs: [{
+            loopServs: [{
                 icone: '<i class="fas fa-laptop-code"></i>',
                 descricao: 'site',
-            },{
+            }, {
                 icone: '<i class="fas fa-file-alt"></i>',
                 descricao: 'landing page',
-            },{
+            }, {
                 icone: '<i class="fas fa-store"></i>',
                 descricao: 'marketplace',
             }
-            ,{
+                , {
                 icone: '<i class="fas fa-shopping-cart"></i>',
                 descricao: 'loja virtual',
-            },{
+            }, {
                 icone: '<i class="fas fa-server"></i>',
                 descricao: 'hospedagem dedicada',
-            },{
+            }, {
                 icone: '<i class="fas fa-globe"></i>',
                 descricao: 'registro de domínio',
             }]
-}}}
+        }
+    },
+    mounted() {
+        const listItens = document.querySelectorAll(".servicos li");
+        listItens.forEach(item => {
+            item.addEventListener("mouseover", () => {
+                const icon = item.querySelector(".iconId i");
+                if (icon) {
+                    icon.classList.add('classIcon')
+                }
+            });
+            item.addEventListener('mouseout', () => {
+                const icon = item.querySelector('.iconId i')
+                icon.classList.remove('classIcon')
+            })
+        })
+    }
+}
 </script>
-
-<style scoped>
+<style>
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
 
-.servicos {background-color:#282b30;color:#fff;padding:35px 0;scroll-margin: 108px;}
-.servicos h2, .servicos h3 {font-family:'Montserrat';font-weight:400}
-.servicos ul {column-count:3;padding-left:0;}
-.servicos ul li {padding-top:35px;}
-.servIcon {width:64px;line-height:64px;text-align:center;border-radius:50%;background:#3f729b;font-size:32px;margin-right:10px;transition:0.3s;}
-.servIcon:hover{transform: rotate(-10deg);}
-.servDesc{font-size:22px;font-family: "Space Mono", Helvetica, Arial, Verdana, sans-serif;}
+
+
+.servicos {
+    background-color: #282b30;
+    color: #fff;
+    padding: 35px 0;
+    scroll-margin: 108px;
+}
+
+.classIcon {
+    transition: .3s;
+    transform: rotate(-10deg) scale(1.1);
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, .6);
+}
+
+.servicos h2,
+.servicos h3 {
+    font-family: 'Montserrat';
+    font-weight: 400
+}
+
+.servicos ul {
+    display: flex;
+    padding-left: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.servicos li {
+    background-color: rgba(37, 57, 75, .6);
+    margin-top: 13px;
+    width: 32.7%;
+    padding-left: 20px;
+    height: 110px;
+    border: 2px solid #282b30;
+}
+
+.servicos li:hover {
+    border: 2px solid red;
+    border-image: linear-gradient(225deg, #294a65 0%, #282b30 100%)1;
+}
+
+.servIcon {
+    width: 72px;
+    line-height: 72px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 56px;
+    margin-right: 5px;
+    transition: 0.3s;
+}
+
+.servDesc {
+    font-size: 1.5rem;
+    font-family: "Space Mono", Helvetica, Arial, Verdana, sans-serif;
+}
 
 @media only screen and (max-width:731px) {
-    .servicos ul {column-count:1;}
+    .servicos li {
+        width: 100%;
+    }
 }
 </style>
