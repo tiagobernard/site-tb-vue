@@ -36,7 +36,7 @@ export default {
                     iconCard: '<i class="fab fa-css3-alt"></i>',
                 }, {
                     tituloCard: 'javascript',
-                    textCard: 'linguagem de programação interpretada estruturada. juntamente com HTML e CSS, o JavaScript é uma das principais tecnologias da web',
+                    textCard: 'linguagem de programação interpretada estruturada. juntamente com HTML e CSS, o JavaScript é uma das principais tecnologias da web.',
                     iconCard: '<i class="fab fa-js"></i>',
                 }, {
                     tituloCard: 'vuejs',
