@@ -35,7 +35,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 
 .rodape {
@@ -49,12 +49,16 @@ export default {
     color: #fff;
     font-weight: 700;
     display: inline-block;
+    transition: .3s
 }
 
 .rodape a:hover {
-    transition: 1s;
     transform: scale(1.2) rotate(-5deg);
     text-shadow: 1px 1px 2px rgba(0,0,0,.9);
+}
+
+.rodape small i {
+    font-size:24px
 }
 
 .assinatura {
