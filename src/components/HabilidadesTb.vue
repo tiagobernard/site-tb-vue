@@ -99,6 +99,7 @@ export default {
 
 .cardsi span {
     display: inline-block;
+    transition: .3s;
 }
 
 .colorHtml5,
@@ -108,7 +109,6 @@ export default {
 .colorBootstrap,
 .colorWordpress {
     transform: rotate(-10deg);
-    transition: .3s ease;
     scale: 1.1;
     text-shadow: 2px 2px 1px rgba(0,0,0,.6);
 }
