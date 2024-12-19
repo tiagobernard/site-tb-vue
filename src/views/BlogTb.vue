@@ -44,7 +44,7 @@ export default {
       console.error("Slug não encontrado na URL.");
       return;
     }
-    fetch("https://tiagobernardes.com.br/api/blog/posts.json")
+    fetch("https://tiagobernardes.com.br/api/blog/posts.json?v=2")
       .then(response => {
         if (!response.ok) {
           throw new Error(`Erro ${response.status} : ${response.statusText}`);
