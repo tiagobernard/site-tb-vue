@@ -62,8 +62,6 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
 
-
-
 .servicos {
     background-color: #282b30;
     color: #fff;
@@ -71,8 +69,20 @@ export default {
     scroll-margin: 108px;
 }
 
-.classIcon {
+.servIcon i {
     transition: .3s;
+}
+
+.servIcon {
+    width: 72px;
+    line-height: 72px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 56px;
+    margin-right: 5px;
+}
+
+.classIcon {
     transform: rotate(-10deg) scale(1.1);
     text-shadow: 2px 2px 1px rgba(0, 0, 0, .6);
 }
@@ -103,16 +113,6 @@ export default {
 .servicos li:hover {
     border: 2px solid red;
     border-image: linear-gradient(225deg, #294a65 0%, #282b30 100%)1;
-}
-
-.servIcon {
-    width: 72px;
-    line-height: 72px;
-    text-align: center;
-    border-radius: 50%;
-    font-size: 56px;
-    margin-right: 5px;
-    transition: 0.3s;
 }
 
 .servDesc {
