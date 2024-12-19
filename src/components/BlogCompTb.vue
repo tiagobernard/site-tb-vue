@@ -5,16 +5,16 @@
             <div v-if="error" class="error">{{ error }}</div>
             <div v-else-if="posts.length" id="postsBlog" class="postsBlog">
                 <ul>
-                    <li v-for="post in posts" :key="post.slug">
+                    <li v-for="post in posts" :key="post.id">
                         <a :href="`/blog/${post.slug}`">
-                        <!-- <a :href="`/single?slug=${post.slug}`"> -->
-                            <img :src="post.imagem" :alt="post.titulo" />
-                            <h4>{{ post.titulo }}</h4>
+                            <h5>{{ post.titulo }}</h5>
+                            <img :src="post.imagem" :alt="post.titulo"/>
+                            <p>{{ post.resumo }}</p>
                         </a>
                     </li>
                 </ul>
             </div>
-            <div v-else class="loading">Carregando...</div>
+            <div v-else>Carregando...</div>
         </div>
     </div>
 </template>
@@ -57,7 +57,7 @@ export default {
     padding: 35px 0;
 }
 
-.blog h2 {
+.blog h2{
     color: #282b30;
     margin-bottom: 35px;
     font-family: 'Montserrat';
@@ -79,15 +79,14 @@ export default {
     text-align: center;
 }
 
+.postsBlog h5 {font-size:1.3rem}
+
 .postsBlog a {
     text-decoration: none;
+    color: #282b30;
 }
 
-.postsBlog a h4 {
-    color: #282b30
-}
-
-.postsBlog a h4:hover {
+.postsBlog a:hover {
     color: #282b30;
     opacity: .8;
 }
@@ -96,11 +95,11 @@ export default {
     width: 300px;
     height: 300px;
     object-fit: cover;
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    transition: 0.3s;
 }
 
 .postsBlog li img:hover {
-    transition: 0.3s;
     transform: scale(0.95);
 }
 
