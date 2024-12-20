@@ -3,7 +3,9 @@
     <div class="container">
       <div class="row d-flex align-items-center">
         <div class="col-6">
-          <h1>olá! eu sou<br />tiago bernardes,<br />desenvolvedor web,<br>wordpress, headless, vuejs.</h1>
+          <h1>olá!<br/>sou tiago bernardes,<br />desenvolvedor web,<br />
+            wordpress, headless, vuejs.<br/>
+            Estudante cst e sap.</h1>
         </div>
         <div class="col-6 socialTb">
           <ul>
