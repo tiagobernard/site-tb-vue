@@ -28,12 +28,9 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
 
 .contato {background:#e8e8e8;padding:35px 0;}
-.contato h2,.contato h3 {font-family:'Montserrat';font-weight:400}
+.contato :where(h2,h3) {font-family:'Montserrat';font-weight:400}
+.contato h3 {margin-bottom: 0;}
 .contato a {color:#3f729b;text-decoration:none;font-weight:600;display: inline-block;transition: .3s;}
 .contato a:hover {transform: scale(0.9)}
-input, textarea {font-family:"Space Mono", Helvetica, Arial, Verdana, sans-serif;transition:.3s;outline:none}
-input:focus, textarea:focus {padding:10px;}
-textarea {height:100px;}
-.formsubmit {text-align:right;}
 
 </style>
