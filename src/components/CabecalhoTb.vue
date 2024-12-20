@@ -1,20 +1,18 @@
 <template>
   <header class="cabecalho">
     <div class="container">
-      <div class="row">
-        <div class="marcatb col-4">
-          <router-link id="scrollButton" to="/#sobre">&lt;tb/&gt;</router-link>
-        </div>
-        <nav class="col-8 d-flex align-items-center">
-          <ul>
-            <li><router-link to="/#habilidades">habilidades</router-link></li>
-            <li><router-link to="/#servicos">serviços</router-link></li>
-            <li><router-link to="/#portfolio">portfólio</router-link></li>
-            <li><router-link to="/#blog">blog</router-link></li>
-            <li><router-link to="/#contato">contato</router-link></li>
-          </ul>
-        </nav>
+      <div class="marcatb col-4">
+        <router-link id="scrollButton" to="/#sobre">&lt;tb/&gt;</router-link>
       </div>
+      <nav class="col-8">
+        <ul>
+          <li><router-link to="/#habilidades">habilidades</router-link></li>
+          <li><router-link to="/#servicos">serviços</router-link></li>
+          <li><router-link to="/#portfolio">portfólio</router-link></li>
+          <li><router-link to="/#blog">blog</router-link></li>
+          <li><router-link to="/#contato">contato</router-link></li>
+        </ul>
+      </nav>
     </div>
   </header>
 </template>
@@ -23,22 +21,26 @@ export default {
   name: 'CabecalhoTb',
   props: { msg: String },
   methods: {},
-  mounted() {document.title = `tiago bernardes | desenvolvedor web`;}
+  mounted() { document.title = `tiago bernardes | desenvolvedor web`; }
 }
 </script>
 
-<style scoped>
+<style>
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
-header {
-  box-shadow: 0 0 15px 1px rgb(0 0 0 / 7%);
+
+.cabecalho {
+  background-color: #e8e8e8;
+  position: fixed;
+  overflow: hidden;
+  box-shadow: 0 0 15px 1px rgb(0, 0, 0, 7%);
   z-index: 1;
   position: sticky;
 }
 
-.cabecalho {
-  background-color: #e8e8e8;position:fixed;width:100%;overflow:hidden;
+.cabecalho .container {
+  display: flex;
 }
 
 .marcatb a {
@@ -48,15 +50,17 @@ header {
   color: #3f729b;
   text-decoration: none;
   display: inline-block;
-  transition: 0.3s
+  transition: 0.3s;
 }
 
 .marcatb a:hover {
-  transform: scale(0.9)
+  transform: scale(0.9);
+  color:#3f729b
 }
 
 nav {
-  align-items: flex-end;
+  display: flex;
+  align-items: center;
   justify-content: flex-end;
 }
 
@@ -75,17 +79,40 @@ nav ul li {
 nav ul li a {
   color: #282b30;
   text-decoration: none;
-  display:inline-block;
-  transition:0.3s;
+  display: inline-block;
+  transition: 0.3s;
 }
 
 nav ul li a:hover {
   color: #3f729b;
   transform: scale(0.9);
 }
+
 @media only screen and (max-width:731px) {
-.cabecalho {padding:10px 0;}
-.marcatb {display: flex;align-items: center;}
-nav ul li {padding: 5px 0;display: block}
+  .cabecalho .container {
+    display: flex;
+    flex-direction: row
+  }
+
+  .cabecalho .col-8 {
+    width: 32%!important;
+  }
+
+  .cabecalho .col-4 {
+    width: 67%!important;
+  }
+
+  nav ul {
+    padding: 15px 0
+  }
+
+  nav li {
+    padding: 10px 0
+  }
+
+  .marcatb {
+    display: flex;
+    align-items: center;
+  }
 }
 </style>
