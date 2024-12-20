@@ -53,6 +53,7 @@ export default {
 }
 
 .rodape a:hover {
+    color:#fff;
     transform: scale(1.2) rotate(-5deg);
     text-shadow: 1px 1px 2px rgba(0,0,0,.9);
 }
