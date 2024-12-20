@@ -25,7 +25,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
@@ -53,7 +53,6 @@ header {
   font-size: 72px;
   color: #3f729b;
   text-decoration: none;
-  display: inline-block;
   transition: 0.3s;
 }
 
@@ -83,7 +82,6 @@ nav ul li {
 nav ul li a {
   color: #282b30;
   text-decoration: none;
-  display: inline-block;
   transition: 0.3s;
 }
 

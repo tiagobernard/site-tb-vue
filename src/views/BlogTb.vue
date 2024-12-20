@@ -66,8 +66,8 @@ export default {
 </script>
 
 <style>
-.cabecalho .col-8 {
-  display: none;
+.mainPosts .cabecalho .col-8 {
+  display: none!important;
 }
 
 .mainPosts .cabecalho .col-4 {
