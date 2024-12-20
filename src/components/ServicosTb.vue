@@ -6,7 +6,7 @@
             <ul>
                 <li class="d-flex align-items-center" v-for="(loopServ, index) of loopServs" v-bind:key="index">
                     <span class="servIcon iconId" v-html="loopServ.icone"></span>
-                    <span class="servDesc">{{ loopServ.descricao }}</span>
+                    <h5 class="servDesc">{{ loopServ.descricao }}</h5>
                 </li>
             </ul>
         </div>
@@ -116,8 +116,9 @@ export default {
 }
 
 .servDesc {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-family: "Space Mono", Helvetica, Arial, Verdana, sans-serif;
+    margin-bottom: 0;
 }
 
 @media only screen and (max-width:731px) {
