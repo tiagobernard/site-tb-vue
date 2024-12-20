@@ -145,7 +145,7 @@ export default {
 
 .habilidades h2 {
     color: #f8f8f8;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
     font-family: 'Montserrat';
     font-weight: 400
 }

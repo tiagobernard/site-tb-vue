@@ -46,7 +46,8 @@ export default {
 .portfolio h2 {
     color: #fff;
     font-family: 'Montserrat';
-    font-weight: 400
+    font-weight: 400;
+    margin-bottom:5px;
 }
 
 .portfolio ul {
@@ -65,7 +66,7 @@ export default {
     color: #fff;
     font-family: "Space Mono", Helvetica, Arial, Verdana, sans-serif;
     width: 24%;
-    padding-top: 35px
+    padding-top: 20px;
 }
 
 .portfolio li a img {

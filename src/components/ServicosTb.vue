@@ -88,10 +88,13 @@ export default {
     color:#c0cedd;
 }
 
-.servicos h2,
-.servicos h3 {
+.servicos :where(h2,h3) {
     font-family: 'Montserrat';
     font-weight: 400
+}
+
+.servicos h3 {
+    margin-bottom: 19px
 }
 
 .servicos ul {
