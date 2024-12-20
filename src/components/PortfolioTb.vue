@@ -5,7 +5,9 @@
                 <h2>últimos projetos desenvolvidos</h2>
                 <ul>
                     <li v-for="postagem in postagens.slice(0, 8)" :key="postagem.id">
-                        <a :href=postagem.link><img id="imagem" :src=postagem.featured_image.size_full :alt="postagem.title.rendered" /></a><br />
+                        <a :href=postagem.link>
+                            <img id="imagem" :src=postagem.featured_image.size_full :alt="postagem.title.rendered" />
+                        </a><br />
                         <span>{{ postagem.title.rendered }}</span>
                     </li>
                 </ul>
