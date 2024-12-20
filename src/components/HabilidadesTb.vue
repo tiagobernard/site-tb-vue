@@ -114,11 +114,11 @@ export default {
 }
 
 .colorHtml {
-    color: #f06529;
+    color: #e34c26;
 }
 
 .colorCss {
-    color: #663399
+    color: #663399;
 }
 
 .colorJs {
@@ -130,7 +130,7 @@ export default {
 }
 
 .colorBootstrap {
-    color: #563d7c
+    color: #712cf9
 }
 
 .colorWordpress {
