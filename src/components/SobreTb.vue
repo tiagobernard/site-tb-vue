@@ -58,7 +58,7 @@ export default {
 
 .sobre {
   background-color: #e8e8e8;
-  padding: 143px 0 35px 0;
+  padding: 35px 0 35px 0;
   color: #282b30;
 }
 
@@ -125,7 +125,7 @@ export default {
 
 @media only screen and (max-width:731px) {
   .sobre {
-    padding: 240px 0 35px 0;
+    padding: 35px 0 35px 0;
   }
 
   .sobre .col-6 {
