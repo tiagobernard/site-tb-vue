@@ -39,6 +39,7 @@ header {
   background-color: #e8e8e8;
   position: fixed;
   overflow: hidden;
+  width: 100%;
   box-shadow: 0 0 15px 1px rgb(0, 0, 0, 7%);
 }
 
