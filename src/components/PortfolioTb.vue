@@ -10,7 +10,6 @@
                     </li>
                 </ul>
             </div>
-            <router-link id="scrollButton" class="btn-top" to @click="goUp"><i class="fas fa-angle-double-up"></i></router-link>
         </div>
     </div>
 </template>
@@ -23,11 +22,7 @@ export default {
             postagens: [],
         }
     },
-    methods: {
-        goUp() {
-            window.scrollTo(0, 0)
-        }
-    },
+    methods: {},
     mounted() {
         axios
         .get("https://lab82.dev/wp-json/wp/v2/dt_portfolio/")
@@ -91,21 +86,6 @@ export default {
 .portfDesc a i:hover {
     opacity: 0.5
 }
-.btn-top {
-    position: fixed;
-    bottom: 35px;
-    right: 35px;
-    background-color:#000/*#282b30*/;
-    z-index: 1;
-    padding: 10px 20px;
-    font-size: 18px;
-    display: block;
-    color: #a6ce39;
-    transition:.3s;
-    opacity:0.8;
-}
-
-.btn-top:hover {transform:scale(1.1)}
 @media only screen and (max-width:731px) {
     .portfolio ul {
         column-count: 1;
@@ -116,10 +96,6 @@ export default {
     .portfolio ul li a img {
         width: 100%;
         height: auto;
-    }
-    .btn-top {
-        bottom: 0;
-        right: 0;
     }
 }
 </style>

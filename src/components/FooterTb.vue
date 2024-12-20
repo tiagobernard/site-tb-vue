@@ -17,6 +17,7 @@
                 </div>
             </div>
         </div>
+        <router-link id="scrollButton" class="btn-top" to @click="goUp"><i class="fas fa-angle-double-up"></i></router-link>
     </div>
 </template>
 
@@ -31,7 +32,11 @@ export default {
             }
         }
     },
-    methods: {}
+    methods: {
+        goUp() {
+            window.scrollTo(0, 0)
+        }
+    }
 }
 </script>
 
@@ -45,14 +50,14 @@ export default {
     padding: 15px;
 }
 
-.rodape a {
+.rodape small a {
     color: #fff;
     font-weight: 700;
     display: inline-block;
     transition: .3s
 }
 
-.rodape a:hover {
+.rodape small a:hover {
     color:#fff;
     transform: scale(1.2) rotate(-5deg);
     text-shadow: 1px 1px 2px rgba(0,0,0,.9);
@@ -67,6 +72,25 @@ export default {
     color: #42b983;
 }
 
+.btn-top {
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+    background-color:#000/*#282b30*/;
+    z-index: 1;
+    padding: 10px 20px;
+    font-size: 18px;
+    display: block;
+    color: #008080;
+    transition:.3s;
+    opacity:0.8;
+}
+
+.btn-top:hover {
+    transform:scale(1.1);
+    color:#3f729b;
+}
+
 @media only screen and (max-width:731px) {
 
     .rodape,
@@ -77,6 +101,10 @@ export default {
     .col-8,
     .col-4 {
         width: 100% !important;
+    }
+    .btn-top {
+        bottom: 0;
+        right: 0;
     }
 }
 </style>
