@@ -27,13 +27,13 @@ export default {
             cardAtivo: null,
             descHabilis: [
                 {
-                    tituloCard: 'html5',
+                    tituloCard: 'html',
                     textCard: 'linguagem de marcação para a web e é uma tecnologia chave da Internet, originalmente proposto por Opera Software.',
                     iconCard: '<i class="fab fa-html5"></i>',
                 }, {
-                    tituloCard: 'css3',
+                    tituloCard: 'css',
                     textCard: 'usado para estilizar elementos de linguagem de marcação como o html. Com ele é possível alterar diversos aspectos de design no layout do projeto.',
-                    iconCard: '<i class="fab fa-css3-alt"></i>',
+                    iconCard: '<i class="fa-brands fa-css"></i>',
                 }, {
                     tituloCard: 'javascript',
                     textCard: 'linguagem de programação interpretada estruturada. juntamente com HTML e CSS, o JavaScript é uma das principais tecnologias da web.',
@@ -68,10 +68,10 @@ export default {
         },
         aplicarClasseLogo(idLogo, tituloCard) {
             // Aplica a classe CSS com base no título do card
-            if (tituloCard === "html5") {
-                idLogo.classList.add("colorHtml5");
-            } else if (tituloCard === "css3") {
-                idLogo.classList.add("colorCss3");
+            if (tituloCard === "html") {
+                idLogo.classList.add("colorHtml");
+            } else if (tituloCard === "css") {
+                idLogo.classList.add("colorCss");
             } else if (tituloCard === "javascript") {
                 idLogo.classList.add('colorJs')
             } else if (tituloCard === "vuejs") {
@@ -102,8 +102,8 @@ export default {
     transition: .3s;
 }
 
-.colorHtml5,
-.colorCss3,
+.colorHtml,
+.colorCss,
 .colorJs,
 .colorVuejs,
 .colorBootstrap,
@@ -113,12 +113,12 @@ export default {
     text-shadow: 2px 2px 1px rgba(0,0,0,.6);
 }
 
-.colorHtml5 {
+.colorHtml {
     color: #f06529;
 }
 
-.colorCss3 {
-    color: #2965f1
+.colorCss {
+    color: #663399
 }
 
 .colorJs {
