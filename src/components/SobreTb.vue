@@ -5,7 +5,7 @@
         <div class="col-6">
           <h1>olá!<br/>sou tiago bernardes,<br />desenvolvedor web,<br />
             wordpress, headless, vuejs.<br/>
-            estudante cst e sap.</h1>
+            estudante cst, sap e abap.</h1>
         </div>
         <div class="col-6 socialTb">
           <ul>
