@@ -3,8 +3,8 @@
         <div class="portfolio">
             <div class="container">
                 <h2>últimos projetos desenvolvidos</h2>
-                <ul v-for="postagem in postagens.slice(0, 8)" :key="postagem.id">
-                    <li>
+                <ul>
+                    <li v-for="postagem in postagens.slice(0, 8)" :key="postagem.id">
                         <a :href=postagem.link><img id="imagem" :src=postagem.featured_image.size_full :alt="postagem.title.rendered" /></a><br />
                         <span>{{ postagem.title.rendered }}</span>
                     </li>
@@ -43,33 +43,38 @@ export default {
 
 .portfolio h2 {
     color: #fff;
-    margin-bottom: 35px;
     font-family: 'Montserrat';
     font-weight: 400
 }
 
 .portfolio ul {
-    column-count: 4;
-    padding-left: 0;
-    width: 25%;
-    display: inline-flex;
+    padding: 0;
+    margin:0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  
 }
 
-.portfolio ul li {
+.portfolio li {
     list-style: none;
     color: #fff;
     font-family: "Space Mono", Helvetica, Arial, Verdana, sans-serif;
+    width: 24%;
+    padding-top: 35px
 }
 
-.portfolio ul li a img {
+.portfolio li a img {
     transition: 0.3s;
     display: inline-block;
-    width: 270px;
-    height: 130px;
+    width: 100%;
+    height: 145px;
     object-fit: cover;
 }
 
-.portfolio ul li a img:hover {
+.portfolio li a img:hover {
     transform: rotate(-2deg) scale(1.05);
     box-shadow: 2px 2px 1px rgba(0, 0, 0, .6)
 }
@@ -87,13 +92,11 @@ export default {
     opacity: 0.5
 }
 @media only screen and (max-width:731px) {
-    .portfolio ul {
-        column-count: 1;
+    .portfolio :where(ul, li) {
         padding-left: 0;
-        width: 100%;
-        display: inline-flex;
+        min-width: 100%;
     }
-    .portfolio ul li a img {
+    .portfolio li a img {
         width: 100%;
         height: auto;
     }
