@@ -85,6 +85,7 @@ export default {
 .classIcon {
     transform: rotate(-10deg) scale(1.1);
     text-shadow: 2px 2px 1px rgba(0, 0, 0, .6);
+    color:#c0cedd;
 }
 
 .servicos h2,
