@@ -30,13 +30,16 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
 
+header {
+  z-index: 1;
+  position: sticky;
+}
+
 .cabecalho {
   background-color: #e8e8e8;
   position: fixed;
   overflow: hidden;
   box-shadow: 0 0 15px 1px rgb(0, 0, 0, 7%);
-  z-index: 1;
-  position: sticky;
 }
 
 .cabecalho .container {
