@@ -111,7 +111,7 @@ nav ul li a:hover {
   }
 
   nav li {
-    padding: 10px 0
+    padding: 5px 0
   }
 
   .marcatb {

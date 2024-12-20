@@ -34,12 +34,7 @@ export default {
       }, {
         iconeS: '<i class="fa-brands fa-x-twitter"></i>',
         urlS: 'https://x.com/TiagoBernard'
-      }, 
-      //{
-      //   iconeS: '<i class="fab fa-telegram-plane"></i>',
-      //   urlS: 'https://t.me/tiagobernard',
-      // },
-      {
+      }, {
         iconeS: '<i class="fab fa-whatsapp"></i>',
         urlS: 'https://wa.me/5531998407238',
       }, {
@@ -125,7 +120,7 @@ export default {
 
 @media only screen and (max-width:731px) {
   .sobre {
-    padding: 306px 0 35px 0;
+    padding: 265px 0 35px 0;
   }
 
   .sobre .col-6 {
