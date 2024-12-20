@@ -96,7 +96,8 @@ export default {
 
 .servicos ul {
     display: flex;
-    padding-left: 0;
+    padding: 0;
+    margin:0;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;

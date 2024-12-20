@@ -68,6 +68,7 @@ export default {
     display: flex !important;
     justify-content: space-between;
     padding: 0;
+    margin: 0
 }
 
 .postsBlog li {

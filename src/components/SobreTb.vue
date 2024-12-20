@@ -61,7 +61,8 @@ export default {
 
 .sobre h1 {
   font-family: 'Montserrat';
-  font-weight: 400
+  font-weight: 400;
+  margin:0
 }
 
 .socialTb ul {

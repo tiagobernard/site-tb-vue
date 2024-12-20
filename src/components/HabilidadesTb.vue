@@ -153,7 +153,8 @@ export default {
 .cards ul {
     column-count: 2;
     column-gap: 10px;
-    padding-left: 0;
+    padding: 0;
+    margin:0;
 
 }
 
