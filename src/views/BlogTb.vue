@@ -66,12 +66,12 @@ export default {
 </script>
 
 <style>
-.mainPosts nav ul {
+.cabecalho .col-8 {
   display: none;
 }
 
 .mainPosts .cabecalho .col-4 {
-  width: 100%;
+  min-width: 100%;
   display: flex;
   justify-content: center;
 }
@@ -86,7 +86,7 @@ export default {
   padding: 168px 30px 60px 30px
 }
 
-#singlePost h1, #singlePost h2, #singlePost h3 {font-family: "Montserrat"}
+#singlePost :where(h1,h2,h3) {font-family: "Montserrat"}
 #singlePost h1 {text-transform: lowercase;}
 
 #singlePost img {
@@ -126,7 +126,7 @@ export default {
 
 @media only screen and (max-width:731px) {
   #singlePost {
-    padding: 240px 30px 60px 30px;
+    padding: 143px 30px 60px 30px;
   }
 
   #singlePost img {
