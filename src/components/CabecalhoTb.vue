@@ -54,6 +54,7 @@ header {
   color: #3f729b;
   text-decoration: none;
   transition: 0.3s;
+  display: inline-block
 }
 
 .marcatb a:hover {
@@ -83,6 +84,7 @@ nav ul li a {
   color: #282b30;
   text-decoration: none;
   transition: 0.3s;
+  display: inline-block
 }
 
 nav ul li a:hover {
