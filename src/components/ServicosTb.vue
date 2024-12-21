@@ -37,6 +37,15 @@ export default {
             }, {
                 icone: '<i class="fas fa-globe"></i>',
                 descricao: 'registro de domínio',
+            },{
+                icone: '<i class="fa-solid fa-chart-line"></i>',
+                descricao: 'seo'
+            },{
+                icone: '<i class="fa-solid fa-envelope-circle-check"></i>',
+                descricao: 'smtp server'
+            }, {
+                icone: '<i class="fa-brands fa-google"></i>',
+                descricao: 'google ads'
             }]
         }
     },
