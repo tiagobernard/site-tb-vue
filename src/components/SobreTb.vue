@@ -55,7 +55,7 @@ export default {
 
 .sobre {
   background-color: #e8e8e8;
-  padding: 143px 0 35px 0;
+  padding: 178px 0 70px 0;
   color: #282b30;
 }
 
