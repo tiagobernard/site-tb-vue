@@ -21,29 +21,28 @@ export default {
             loopServs: [{
                 icone: '<i class="fas fa-laptop-code"></i>',
                 descricao: 'site',
-            }, {
-                icone: '<i class="fas fa-file-alt"></i>',
-                descricao: 'landing page',
-            }, {
+            },{
                 icone: '<i class="fas fa-store"></i>',
                 descricao: 'marketplace',
-            }
-                , {
-                icone: '<i class="fas fa-shopping-cart"></i>',
-                descricao: 'loja virtual',
-            }, {
-                icone: '<i class="fas fa-server"></i>',
-                descricao: 'hospedagem dedicada',
-            }, {
+            },{
+                icone: '<i class="fa-solid fa-envelope-circle-check"></i>',
+                descricao: 'smtp server'
+            },{
+                icone: '<i class="fas fa-file-alt"></i>',
+                descricao: 'landing page',
+            },{
                 icone: '<i class="fas fa-globe"></i>',
                 descricao: 'registro de domínio',
             },{
                 icone: '<i class="fa-solid fa-chart-line"></i>',
                 descricao: 'seo'
-            },{
-                icone: '<i class="fa-solid fa-envelope-circle-check"></i>',
-                descricao: 'smtp server'
+            },  {
+                icone: '<i class="fas fa-shopping-cart"></i>',
+                descricao: 'loja virtual',
             }, {
+                icone: '<i class="fas fa-server"></i>',
+                descricao: 'hospedagem dedicada',
+            },  {
                 icone: '<i class="fa-brands fa-google"></i>',
                 descricao: 'google ads'
             }]
@@ -107,12 +106,13 @@ export default {
 }
 
 .servicos ul {
-    display: flex;
     padding: 0;
     margin:0;
+    display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    height: auto;
 }
 
 .servicos li {
