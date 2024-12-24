@@ -27,7 +27,7 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
 
-.contato {background:#e8e8e8;padding:70px 0;}
+.contato {background:#e8e8e8;padding:35px 0;}
 .contato :where(h2,h3) {font-family:'Montserrat';font-weight:400}
 .contato h3 {margin-bottom: 0;}
 .contato a {color:#3f729b;text-decoration:none;font-weight:600;display: inline-block;transition: .3s;}
