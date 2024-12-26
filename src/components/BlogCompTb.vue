@@ -54,7 +54,7 @@ export default {
 
 .blog {
     background-color: #608db0;
-    padding: 35px 0;
+    padding: 70px 0;
 }
 
 .blog h2{
