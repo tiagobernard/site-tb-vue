@@ -97,6 +97,18 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
 
+.habilidades {
+    background: #294a65;
+    color: #fff;
+    padding: 70px 0;
+}
+
+.habilidades h2 {
+    color: #f8f8f8;
+    margin-bottom: 25px;
+    font-family: 'Montserrat';
+    font-weight: 400
+}
 .cardsi span {
     display: inline-block;
     transition: .3s;
@@ -135,19 +147,6 @@ export default {
 
 .colorWordpress {
     color: #3858e9
-}
-
-.habilidades {
-    background: #294a65;
-    color: #fff;
-    padding: 35px 0;
-}
-
-.habilidades h2 {
-    color: #f8f8f8;
-    margin-bottom: 25px;
-    font-family: 'Montserrat';
-    font-weight: 400
 }
 
 .cards ul {
