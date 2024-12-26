@@ -40,7 +40,7 @@ export default {
 
 .portfolio {
     background-color: #3f729b;
-    padding: 35px 0;
+    padding: 70px 0;
 }
 
 .portfolio h2 {
