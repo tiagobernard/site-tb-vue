@@ -121,6 +121,11 @@ export default {
   }
 }
 
+@media only screen and (min-width: 732px) and (max-width: 1024px) {
+  .socialTb a {font-size:36px}
+  .sobre h1 {font-size:2rem}
+}
+
 @media only screen and (max-width:731px) {
   .sobre {
     padding: 265px 0 35px 0;
