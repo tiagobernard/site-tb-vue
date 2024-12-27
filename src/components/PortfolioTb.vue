@@ -94,6 +94,9 @@ export default {
 .portfDesc a i:hover {
     opacity: 0.5
 }
+@media only screen and (min-width: 732px) and (max-width: 1024px) {
+    .portfolio li {font-size:14px}
+}
 @media only screen and (max-width:731px) {
     .portfolio :where(ul, li) {
         padding-left: 0;
