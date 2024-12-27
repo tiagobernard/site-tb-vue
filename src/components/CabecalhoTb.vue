@@ -119,4 +119,8 @@ nav ul li a:hover {
     align-items: center;
   }
 }
+
+@media only screen and (min-width: 732px) and (max-width: 1024px) {
+  nav ul li {font-size:16px}
+}
 </style>
