@@ -177,12 +177,12 @@ export default {
     transition: .3s;
 }
 
-/* .cardsi:hover {
-    transform: rotate(-10deg);
-} */
-
 .cardsp {
     font-family: "Space Mono", Helvetica, Arial, Verdana, sans-serif;
+}
+
+@media only screen and (min-width: 732px) and (max-width: 1024px) {
+    .cardsp {font-size:20px}
 }
 
 @media only screen and (max-width:731px) {
