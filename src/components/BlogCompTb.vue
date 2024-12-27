@@ -115,6 +115,7 @@ export default {
     }
     .postsBlog li {
         width: 100%;
+        margin-bottom:13px;
     }
     .postsBlog li img {display: none;}
 }
