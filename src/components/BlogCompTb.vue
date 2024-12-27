@@ -104,14 +104,18 @@ export default {
     transform: scale(0.95);
 }
 
+@media only screen and (min-width: 732px) and (max-width: 1024px) {
+    .postsBlog li img {display: none;}
+}
+
 @media only screen and (max-width:731px) {
     .postsBlog ul {
         display: flex;
         flex-direction: column;
     }
-
     .postsBlog li {
         width: 100%;
     }
+    .postsBlog li img {display: none;}
 }
 </style>
