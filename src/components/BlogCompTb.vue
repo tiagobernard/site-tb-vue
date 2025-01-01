@@ -104,7 +104,14 @@ export default {
     transform: scale(0.95);
 }
 
-@media only screen and (min-width: 732px) and (max-width: 1024px) {
+@media only screen and (min-width: 732px) and (max-width: 768px) {
+    .blog {padding: 70px 0 50px 0;}
+    .postsBlog ul {max-width: 100%;flex-direction: column;}
+    .postsBlog li {width: 100%;margin-bottom:20px}
+    .postsBlog li img {display: none;}
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
     .postsBlog li img {display: none;}
 }
 
