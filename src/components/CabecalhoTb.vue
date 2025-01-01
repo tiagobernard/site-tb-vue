@@ -97,7 +97,7 @@ nav ul li a:hover {
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-  nav ul li {font-size:16px}
+  nav ul li {margin-left:20px}
 }
 
 @media only screen and (max-width:731px) {
