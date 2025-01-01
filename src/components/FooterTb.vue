@@ -90,7 +90,12 @@ export default {
     transform:scale(1.1);
     color:#3f729b;
 }
-@media only screen and (min-width: 732px) and (max-width: 1024px) {
+
+@media only screen and (min-width: 732px) and (max-width: 768px) {
+    .btn-top {margin-bottom: 50px;}
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
     .rodape small {font-size: 0.8rem}
 }
 @media only screen and (max-width:731px) {
