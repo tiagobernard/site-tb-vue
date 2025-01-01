@@ -135,7 +135,7 @@ export default {
     margin-bottom: 0;
 }
 
-@media only screen and (min-width:732px) and (max-width:768px) {
+@media only screen and (min-width:732px) and (max-width:812px) {
     .servDesc {font-size:1.1rem}
     .servIcon {margin-right:10px}
 }

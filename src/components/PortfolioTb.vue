@@ -95,12 +95,12 @@ export default {
     opacity: 0.5
 }
 
-@media only screen and (min-width:732px) and (max-width:768px) {
+@media only screen and (min-width:732px) and (max-width:820px) {
     .portfolio ul {align-items: start;}
     .portfolio li {width:48%;margin-bottom:20px}
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+@media only screen and (min-width: 821px) and (max-width: 1024px) {
     .portfolio li {font-size:20px;width:48%;margin-bottom:20px}
     .portfolio li a img {height:210px}
 }

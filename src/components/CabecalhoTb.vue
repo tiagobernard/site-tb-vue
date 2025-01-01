@@ -92,11 +92,11 @@ nav ul li a:hover {
   transform: scale(0.9);
 }
 
-@media only screen and (min-width: 732px) and (max-width: 768px){
+@media only screen and (min-width: 732px) and (max-width: 820px){
   nav ul li {font-size: 14px;margin-left:18px;}
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+@media only screen and (min-width: 821px) and (max-width: 1024px) {
   nav ul li {margin-left:20px}
 }
 
