@@ -92,6 +92,14 @@ nav ul li a:hover {
   transform: scale(0.9);
 }
 
+@media only screen and (min-width: 732px) and (max-width: 768px){
+  nav ul li {font-size: 14px;margin-left:18px;}
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  nav ul li {font-size:16px}
+}
+
 @media only screen and (max-width:731px) {
   .cabecalho .container {
     display: flex;
@@ -118,9 +126,5 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
   }
-}
-
-@media only screen and (min-width: 732px) and (max-width: 1024px) {
-  nav ul li {font-size:16px}
 }
 </style>
