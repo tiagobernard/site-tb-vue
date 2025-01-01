@@ -94,8 +94,15 @@ export default {
 .portfDesc a i:hover {
     opacity: 0.5
 }
-@media only screen and (min-width: 732px) and (max-width: 1024px) {
-    .portfolio li {font-size:14px}
+
+@media only screen and (min-width:732px) and (max-width:768px) {
+    .portfolio ul {align-items: start;}
+    .portfolio li {width:48%;margin-bottom:20px}
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .portfolio li {font-size:20px;width:48%;margin-bottom:20px}
+    .portfolio li a img {height:210px}
 }
 @media only screen and (max-width:731px) {
     .portfolio :where(ul, li) {
