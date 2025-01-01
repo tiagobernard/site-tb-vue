@@ -121,7 +121,12 @@ export default {
   }
 }
 
-@media only screen and (min-width: 732px) and (max-width: 1024px) {
+@media only screen and (min-width:732px) and (max-width:768px) {
+  .socialTb ul {display: block;}
+  .sobre h1 {font-size:1.5rem}
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
   .socialTb a {font-size:36px}
   .sobre h1 {font-size:2rem}
 }
