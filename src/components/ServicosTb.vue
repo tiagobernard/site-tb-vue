@@ -137,7 +137,8 @@ export default {
 
 @media only screen and (min-width:732px) and (max-width:812px) {
     .servDesc {font-size:1.1rem}
-    .servIcon {margin-right:10px}
+    .servIcon {margin-right:8px}
+    .servicos li {padding-left:10px;}
 }
 
 @media only screen and (max-width:731px) {
