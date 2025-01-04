@@ -175,16 +175,16 @@ export default {
     font-family: "Space Mono", Helvetica, Arial, Verdana, sans-serif;
 }
 
-@media only screen and (min-width:732px)  and (max-width:820px) {
+@media screen and (min-width:732px)  and (max-width:820px) {
     .cardsp {font-size:16px}
     .cards ul {display: flex;flex-direction: column;}
 }
 
-@media only screen and (min-width: 821px) and (max-width: 1024px) {
+@media screen and (min-width: 821px) and (max-width: 1024px) {
     .cardsp {font-size:20px}
 }
 
-@media only screen and (max-width:731px) {
+@media screen and (max-width:731px) {
     .cards ul {
         column-count: 1;
     }
