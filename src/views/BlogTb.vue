@@ -124,7 +124,7 @@ export default {
   transform: scale(1.1)
 }
 
-@media only screen and (max-width:731px) {
+@media screen and (max-width:731px) {
   #singlePost {
     padding: 143px 30px 60px 30px;
   }
