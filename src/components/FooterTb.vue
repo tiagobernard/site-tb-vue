@@ -91,14 +91,14 @@ export default {
     color:#3f729b;
 }
 
-@media only screen and (min-width: 732px) and (max-width: 820px) {
+@media screen and (min-width: 732px) and (max-width: 820px) {
     .btn-top {margin-bottom: 50px;}
 }
 
-@media only screen and (min-width: 821px) and (max-width: 1024px) {
+@media screen and (min-width: 821px) and (max-width: 1024px) {
     .rodape small {font-size: 0.8rem}
 }
-@media only screen and (max-width:731px) {
+@media screen and (max-width:731px) {
 
     .rodape :where(.assinatura) {
         text-align: center !important;
