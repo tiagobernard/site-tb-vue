@@ -100,13 +100,11 @@ export default {
 }
 @media only screen and (max-width:731px) {
 
-    .rodape,
-    .assinatura {
+    .rodape :where(.assinatura) {
         text-align: center !important;
     }
 
-    .col-8,
-    .col-4 {
+    .col-8 :where(.col-4) {
         width: 100% !important;
     }
     .btn-top {
