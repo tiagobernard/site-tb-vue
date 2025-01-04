@@ -114,14 +114,8 @@ export default {
     transition: .3s;
 }
 
-.colorHtml,
-.colorCss,
-.colorJs,
-.colorVuejs,
-.colorBootstrap,
-.colorWordpress {
-    transform: rotate(-10deg);
-    scale: 1.1;
+:where(.colorHtml, .colorCss, .colorJs, .colorVuejs, .colorBootstrap, .colorWordpress) {
+    transform: rotate(-10deg) scale(1.1);
     text-shadow: 2px 2px 1px rgba(0,0,0,.6);
 }
 
