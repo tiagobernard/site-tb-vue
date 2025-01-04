@@ -99,39 +99,34 @@ export default {
   0% {
     transform: rotate(-50deg);
   }
-
   30% {
     transform: rotate(30deg);
   }
-
   50% {
     transform: rotate(-30deg)
   }
-
   70% {
     transform: rotate(20deg)
   }
-
   90% {
     transform: rotate(-5deg);
   }
-
   100% {
     transform: rotate(0deg);
   }
 }
 
-@media only screen and (min-width:732px) and (max-width:820px) {
+@media screen and (min-width:732px) and (max-width:820px) {
   .socialTb ul {display: block;}
   .sobre h1 {font-size:1.5rem}
 }
 
-@media only screen and (min-width: 821px) and (max-width: 1024px) {
+@media screen and (min-width: 821px) and (max-width: 1024px) {
   .socialTb a {font-size:36px}
   .sobre h1 {font-size:2rem}
 }
 
-@media only screen and (max-width:731px) {
+@media screen and (max-width:731px) {
   .sobre {
     padding: 265px 0 35px 0;
   }
