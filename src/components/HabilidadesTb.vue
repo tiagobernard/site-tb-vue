@@ -38,7 +38,11 @@ export default {
                     tituloCard: 'javascript',
                     textCard: 'linguagem de programação interpretada estruturada. juntamente com HTML e CSS, o JavaScript é uma das principais tecnologias da web.',
                     iconCard: '<i class="fab fa-js"></i>',
-                }, {
+                },{
+                    tituloCard: 'python',
+                    textCard: 'uma linguagem de programação versátil, amplamente utilizada em desenvolvimento web, automação, inteligência artificial e ciência de dados.',
+                    iconCard: '<i class="fa-brands fa-python"></i>'
+                },{
                     tituloCard: 'vuejs',
                     textCard: 'framework JavaScript de código-aberto, focado no desenvolvimento de interfaces de usuário e aplicativos de página única.',
                     iconCard: '<i class="fab fa-vuejs"></i>',
@@ -46,10 +50,15 @@ export default {
                     tituloCard: 'bootstrap',
                     textCard: 'framework web para desenvolvimento front-end para aplicações web usando HTML, CSS e JS. Melhora a experiência do usuário em um site amigável e responsivo.',
                     iconCard: '<i class="fab fa-bootstrap"></i>',
-                }, {
+                },
+                {
                     tituloCard: 'wordpress',
                     textCard: 'gerenciador de conteúdo que pode ser usado para criar sites, blogs e lojas virtuais. 43% da internet usa a ferramenta.',
                     iconCard: '<i class="fab fa-wordpress"></i>',
+                },{
+                    tituloCard: 'github',
+                    textCard: 'uma plataforma de hospedagem de código, usada para colaboração, controle de versão e gerenciamento de projetos.',
+                    iconCard: '<i class="fa-brands fa-github-alt"></i>',
                 }
             ]
         }
@@ -80,6 +89,10 @@ export default {
                 idLogo.classList.add('colorBootstrap')
             } else if (tituloCard === "wordpress") {
                 idLogo.classList.add('colorWordpress')
+            } else if (tituloCard == "python") {
+                idLogo.classList.add('colorPython')
+            } else if (tituloCard == "github") {
+                idLogo.classList.add('colorGithub')
             }
         },
         resetarClasseLogo() {
@@ -114,7 +127,7 @@ export default {
     transition: .3s;
 }
 
-:where(.colorHtml, .colorCss, .colorJs, .colorVuejs, .colorBootstrap, .colorWordpress) {
+:where(.colorHtml, .colorCss, .colorJs, .colorVuejs, .colorBootstrap, .colorWordpress, .colorPython, .colorGithub) {
     transform: rotate(-10deg) scale(1.1);
     text-shadow: 2px 2px 1px rgba(0,0,0,.6);
 }
@@ -141,6 +154,14 @@ export default {
 
 .colorWordpress {
     color: #3858e9
+}
+
+.colorPython {
+    color: #fbcb24
+}
+
+.colorGithub {
+    color:#f4cbb2
 }
 
 .cards ul {
