@@ -4,11 +4,11 @@
             <div class="row">
                 <div class="col-8">
                     <small>
-                        1998 - 2024 | desenvolvido em
+                        1998 - 2024 | Desenvolvido em
                         <a :href="iconeFooter.linkIcone" target="_blank">
                             <span v-html="iconeFooter.desenhoIcone"></span>
-                        </a> por tiago bernardes | hospedado por
-                        <a href="https://lab82.dev/" target="_blank">lab82</a>
+                        </a> por Tiago Bernardes | Hospedado por
+                        <a href="https://lab82.dev/" target="_blank">Lab82</a>
                     </small>
                 </div>
                 <div class="col-4 assinatura">
