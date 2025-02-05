@@ -1,7 +1,7 @@
 <template>
     <div id="blog" class="blog">
         <div class="container">
-            <h2>postagens do blog</h2>
+            <h2>Postagens do blog</h2>
             <div v-if="error" class="error">{{ error }}</div>
             <div v-else-if="posts.length" id="postsBlog" class="postsBlog">
                 <ul>
