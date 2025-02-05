@@ -1,8 +1,8 @@
 <template>
     <div id="servicos" class="servicos">
         <div class="container">
-            <h2>será incrível atender a sua empresa.</h2>
-            <h3>algumas soluções para executar seu projeto:</h3>
+            <h2>Será incrível atender a sua empresa.</h2>
+            <h3>Algumas soluções para executar seu projeto:</h3>
             <ul>
                 <li class="d-flex align-items-center" v-for="(loopServ, index) of loopServs" v-bind:key="index">
                     <span class="servIcon iconId" v-html="loopServ.icone"></span>
@@ -20,31 +20,31 @@ export default {
         return {
             loopServs: [{
                 icone: '<i class="fas fa-laptop-code"></i>',
-                descricao: 'site',
+                descricao: 'Site',
             },{
                 icone: '<i class="fas fa-store"></i>',
-                descricao: 'marketplace',
+                descricao: 'Marketplace',
             },{
                 icone: '<i class="fa-solid fa-envelope-circle-check"></i>',
-                descricao: 'smtp server'
+                descricao: 'SMTP server'
             },{
                 icone: '<i class="fas fa-file-alt"></i>',
-                descricao: 'landing page',
+                descricao: 'Landing page',
             },{
                 icone: '<i class="fas fa-globe"></i>',
-                descricao: 'registro de domínio',
+                descricao: 'Registro de domínio',
             },{
                 icone: '<i class="fa-solid fa-chart-line"></i>',
-                descricao: 'seo'
+                descricao: 'SEO'
             },  {
                 icone: '<i class="fas fa-shopping-cart"></i>',
-                descricao: 'loja virtual',
+                descricao: 'Loja virtual',
             }, {
                 icone: '<i class="fas fa-server"></i>',
-                descricao: 'hospedagem dedicada',
+                descricao: 'Hospedagem dedicada',
             },  {
                 icone: '<i class="fa-brands fa-google"></i>',
-                descricao: 'google ads'
+                descricao: 'Google ADS'
             }]
         }
     },
