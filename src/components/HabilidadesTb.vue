@@ -1,7 +1,7 @@
 <template>
     <div id="habilidades" class="habilidades">
         <div class="container">
-            <h2>principais habilidades</h2>
+            <h2>Principais habilidades</h2>
             <div class="cards">
                 <ul>
                     <li class="d-flex align-items-center" v-for="(card, index) in descHabilis" :key="index"
@@ -27,37 +27,37 @@ export default {
             cardAtivo: null,
             descHabilis: [
                 {
-                    tituloCard: 'html',
-                    textCard: 'linguagem de marcação para a web e é uma tecnologia chave da Internet, originalmente proposto por Opera Software.',
+                    tituloCard: 'HTML',
+                    textCard: 'Linguagem de marcação para a web e é uma tecnologia chave da Internet, originalmente proposto por Opera Software.',
                     iconCard: '<i class="fab fa-html5"></i>',
                 }, {
-                    tituloCard: 'css',
-                    textCard: 'usado para estilizar elementos de linguagem de marcação como o html. Com ele é possível alterar diversos aspectos de design no layout do projeto.',
+                    tituloCard: 'CSS',
+                    textCard: 'Usado para estilizar elementos de linguagem de marcação como o html. Com ele é possível alterar diversos aspectos de design no layout do projeto.',
                     iconCard: '<i class="fa-brands fa-css"></i>',
                 }, {
-                    tituloCard: 'javascript',
-                    textCard: 'linguagem de programação interpretada estruturada. juntamente com HTML e CSS, o JavaScript é uma das principais tecnologias da web.',
+                    tituloCard: 'Javascript',
+                    textCard: 'Linguagem de programação interpretada estruturada. juntamente com HTML e CSS, o JavaScript é uma das principais tecnologias da web.',
                     iconCard: '<i class="fab fa-js"></i>',
                 },{
-                    tituloCard: 'python',
-                    textCard: 'uma linguagem de programação versátil, amplamente utilizada em desenvolvimento web, automação, inteligência artificial e ciência de dados.',
+                    tituloCard: 'Python',
+                    textCard: 'Uma linguagem de programação versátil, amplamente utilizada em desenvolvimento web, automação, inteligência artificial e ciência de dados.',
                     iconCard: '<i class="fa-brands fa-python"></i>'
                 },{
-                    tituloCard: 'vuejs',
-                    textCard: 'framework JavaScript de código-aberto, focado no desenvolvimento de interfaces de usuário e aplicativos de página única.',
+                    tituloCard: 'Vuejs',
+                    textCard: 'Framework JavaScript de código-aberto, focado no desenvolvimento de interfaces de usuário e aplicativos de página única.',
                     iconCard: '<i class="fab fa-vuejs"></i>',
                 }, {
-                    tituloCard: 'bootstrap',
-                    textCard: 'framework web para desenvolvimento front-end para aplicações web usando HTML, CSS e JS. Melhora a experiência do usuário em um site amigável e responsivo.',
+                    tituloCard: 'Bootstrap',
+                    textCard: 'Framework web para desenvolvimento front-end para aplicações web usando HTML, CSS e JS. Melhora a experiência do usuário em um site amigável e responsivo.',
                     iconCard: '<i class="fab fa-bootstrap"></i>',
                 },
                 {
-                    tituloCard: 'wordpress',
-                    textCard: 'gerenciador de conteúdo que pode ser usado para criar sites, blogs e lojas virtuais. 43% da internet usa a ferramenta.',
+                    tituloCard: 'Wordpress',
+                    textCard: 'Gerenciador de conteúdo que pode ser usado para criar sites, blogs e lojas virtuais. 43% da internet usa a ferramenta.',
                     iconCard: '<i class="fab fa-wordpress"></i>',
                 },{
-                    tituloCard: 'github',
-                    textCard: 'uma plataforma de hospedagem de código, usada para colaboração, controle de versão e gerenciamento de projetos.',
+                    tituloCard: 'Github',
+                    textCard: 'Uma plataforma de hospedagem de código, usada para colaboração, controle de versão e gerenciamento de projetos.',
                     iconCard: '<i class="fa-brands fa-github-alt"></i>',
                 }
             ]
