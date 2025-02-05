@@ -3,9 +3,10 @@
     <div class="container">
       <div class="row d-flex align-items-center">
         <div class="col-6">
-          <h1>olá!<br/>sou tiago bernardes,<br />desenvolvedor web,<br />
-            wordpress, headless, vuejs.<br/>
-            estudante cst, sap e abap.</h1>
+          <h1>Olá!<br/>
+            Sou Tiago Bernardes,<br />
+            Estagiário no <a href="https://ifmg.edu.br" target="_blank">IFMG</a><br>Desenvolvedor web,<br />
+            Estudante CST, Python, POO.</h1>
         </div>
         <div class="col-6 socialTb">
           <ul>

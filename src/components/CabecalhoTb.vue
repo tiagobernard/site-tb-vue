@@ -6,11 +6,11 @@
       </div>
       <nav class="col-8">
         <ul>
-          <li><router-link to="/#habilidades">habilidades</router-link></li>
-          <li><router-link to="/#servicos">serviços</router-link></li>
-          <li><router-link to="/#portfolio">portfólio</router-link></li>
-          <li><router-link to="/#blog">blog</router-link></li>
-          <li><router-link to="/#contato">contato</router-link></li>
+          <li><router-link to="/#habilidades">Habilidades</router-link></li>
+          <li><router-link to="/#servicos">Serviços</router-link></li>
+          <li><router-link to="/#portfolio">Portfólio</router-link></li>
+          <li><router-link to="/#blog">Blog</router-link></li>
+          <li><router-link to="/#contato">Contato</router-link></li>
         </ul>
       </nav>
     </div>
