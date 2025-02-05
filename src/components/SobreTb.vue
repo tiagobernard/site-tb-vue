@@ -6,7 +6,7 @@
           <h1>Olá!<br/>
             Sou Tiago Bernardes,<br />
             Estagiário no <a href="https://www.ifmg.edu.br/portal/educacao-a-distancia/institucional" target="_blank">CREAD/IFMG</a>,<br>Desenvolvedor web,<br />
-            Estudante CST, Python OO.</h1>
+            Estudante CST, ABAP, Python OO.</h1>
         </div>
         <div class="col-6 socialTb">
           <ul>
