@@ -5,7 +5,7 @@
         <div class="col-6">
           <h1>Olá!<br/>
             Sou Tiago Bernardes,<br />
-            Estagiário no <a href="https://ifmg.edu.br" target="_blank">IFMG</a><br>Desenvolvedor web,<br />
+            Estagiário no <a href="https://ifmg.edu.br" target="_blank">IFMG</a>,<br>Desenvolvedor web,<br />
             Estudante CST, Python, POO.</h1>
         </div>
         <div class="col-6 socialTb">
@@ -64,6 +64,11 @@ export default {
   font-family: 'Montserrat';
   font-weight: 400;
   margin:0
+}
+
+.sobre a {
+  color: #3f729b;
+  text-decoration: none;
 }
 
 .socialTb ul {
