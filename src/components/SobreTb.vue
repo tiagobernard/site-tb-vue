@@ -124,7 +124,7 @@ export default {
 
 @media screen and (min-width:732px) and (max-width:820px) {
   .socialTb ul {display: block;}
-  .sobre h1 {font-size:1.5rem}
+  .sobre h1 {font-size:1.4rem}
 }
 
 @media screen and (min-width: 821px) and (max-width: 1024px) {
@@ -135,6 +135,10 @@ export default {
 @media screen and (max-width:731px) {
   .sobre {
     padding: 265px 0 35px 0;
+  }
+
+  .sobre h1 {
+    font-size: 1.6rem;
   }
 
   .sobre .col-6 {
