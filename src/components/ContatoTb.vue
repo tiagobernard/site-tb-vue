@@ -1,10 +1,10 @@
 <template>
     <div id="contato" class="contato">
         <div class="container">
-            <h2>tem um projeto em mente?<br/>
-            então precisamos conversar.</h2>
-            <h3>você pode me chamar no <a :href="`https://t.me/tiagobernard`" title="@tiagobernard" target="_blank">telegram</a> ou <a href="https://wa.me/5531998407238" target="_blank">whatsapp</a><br>
-            ou enviar um e-mail para <a :href="`mailto:tiago@lab82.dev`">tiago@lab82.dev</a></h3>
+            <h2>Tem um projeto em mente?<br/>
+            Então precisamos conversar.</h2>
+            <h3>Você pode me chamar no <a :href="`https://t.me/tiagobernard`" title="@tiagobernard" target="_blank">Telegram</a> ou <a href="https://wa.me/5531998407238" target="_blank">Whatsapp</a> ou<br>
+            enviar um e-mail para <a :href="`mailto:tiago@lab82.dev`">tiago@lab82.dev</a></h3>
         </div>
     </div>
 </template>
