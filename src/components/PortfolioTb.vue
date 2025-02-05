@@ -2,7 +2,7 @@
     <div id="portfolio" class="port">
         <div class="portfolio">
             <div class="container">
-                <h2>últimos projetos desenvolvidos</h2>
+                <h2>Últimos projetos desenvolvidos</h2>
                 <ul>
                     <li v-for="postagem in postagens.slice(0, 8)" :key="postagem.id">
                         <a :href=postagem.link>
