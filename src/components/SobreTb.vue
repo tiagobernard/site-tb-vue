@@ -5,7 +5,7 @@
         <div class="col-6">
           <h1>Olá!<br/>
             Sou Tiago Bernardes,<br />
-            Estagiário no <a href="https://ifmg.edu.br" target="_blank">IFMG</a>,<br>Desenvolvedor web,<br />
+            Estagiário no <a href="https://www.ifmg.edu.br/portal/educacao-a-distancia/institucional" target="_blank">CREAD/IFMG</a>,<br>Desenvolvedor web,<br />
             Estudante CST, Python, POO.</h1>
         </div>
         <div class="col-6 socialTb">
