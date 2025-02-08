@@ -77,21 +77,21 @@ export default {
         },
         aplicarClasseLogo(idLogo, tituloCard) {
             // Aplica a classe CSS com base no título do card
-            if (tituloCard === "html") {
+            if (tituloCard === "HTML") {
                 idLogo.classList.add("colorHtml");
-            } else if (tituloCard === "css") {
+            } else if (tituloCard === "CSS") {
                 idLogo.classList.add("colorCss");
-            } else if (tituloCard === "javascript") {
+            } else if (tituloCard === "Javascript") {
                 idLogo.classList.add('colorJs')
-            } else if (tituloCard === "vuejs") {
+            } else if (tituloCard === "Vuejs") {
                 idLogo.classList.add('colorVuejs')
-            } else if (tituloCard === "bootstrap") {
+            } else if (tituloCard === "Bootstrap") {
                 idLogo.classList.add('colorBootstrap')
-            } else if (tituloCard === "wordpress") {
+            } else if (tituloCard === "Wordpress") {
                 idLogo.classList.add('colorWordpress')
-            } else if (tituloCard == "python") {
+            } else if (tituloCard == "Python") {
                 idLogo.classList.add('colorPython')
-            } else if (tituloCard == "github") {
+            } else if (tituloCard == "Github") {
                 idLogo.classList.add('colorGithub')
             }
         },
