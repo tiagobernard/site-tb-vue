@@ -3,10 +3,11 @@
     <div class="container">
       <div class="row d-flex align-items-center">
         <div class="col-6">
-          <h1>Olá!<br/>
+          <h1>Olá!<br />
             Sou Tiago Bernardes,<br />
-            Estagiário no <a href="https://www.ifmg.edu.br/portal/educacao-a-distancia/institucional" target="_blank">CREAD/IFMG</a>,<br>Desenvolvedor web,<br />
-            Estudante CST, ABAP e<br>Python Orientado a Objetos.</h1>
+            Web Dev no <a href="https://www.ifmg.edu.br/portal/educacao-a-distancia/institucional"
+              target="_blank">CREAD/IFMG</a>,<br>
+            Cursando <span :title="mensagemTooltip">CST</span> no 4º período,<br>Estudando FastAPI e Docker.</h1>
         </div>
         <div class="col-6 socialTb">
           <ul>
@@ -25,6 +26,7 @@ export default {
   name: 'SobreTb',
   data() {
     return {
+      mensagemTooltip: "Curso Superior em Tecnologia",
       loopSocials: [{
         iconeS: '<i class="fab fa-github"></i>',
         urlS: 'https://github.com/tiagobernard/',
@@ -63,7 +65,7 @@ export default {
 .sobre h1 {
   font-family: 'Montserrat';
   font-weight: 400;
-  margin:0
+  margin: 0
 }
 
 .sobre a {
@@ -105,31 +107,46 @@ export default {
   0% {
     transform: rotate(-50deg);
   }
+
   30% {
     transform: rotate(30deg);
   }
+
   50% {
     transform: rotate(-30deg)
   }
+
   70% {
     transform: rotate(20deg)
   }
+
   90% {
     transform: rotate(-5deg);
   }
+
   100% {
     transform: rotate(0deg);
   }
 }
 
 @media screen and (min-width:732px) and (max-width:820px) {
-  .socialTb ul {display: block;}
-  .sobre h1 {font-size:1.4rem}
+  .socialTb ul {
+    display: block;
+  }
+
+  .sobre h1 {
+    font-size: 1.4rem
+  }
 }
 
 @media screen and (min-width: 821px) and (max-width: 1024px) {
-  .socialTb a {font-size:36px}
-  .sobre h1 {font-size:2rem}
+  .socialTb a {
+    font-size: 36px
+  }
+
+  .sobre h1 {
+    font-size: 2rem
+  }
 }
 
 @media screen and (max-width:731px) {
